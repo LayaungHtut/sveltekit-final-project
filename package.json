@@ -55,6 +55,7 @@
 		"@oslojs/encoding": "^1.1.0",
 		"dotenv": "^17.2.0",
 		"drizzle-orm": "^0.40.0",
+		"lucide-svelte": "^0.539.0",
 		"marked": "^16.0.0",
 		"openai": "^5.9.0"
 	}

@@ -4,7 +4,7 @@ import type { RouteInterface } from "./route.interface";
 export const SilverSoulRoute: RouteInterface[] = [
     {
         name: "Home",
-        path: "/exampleRoutes/Home",
+        path: "/exampleRoutes/Homez",
         icon: LucideFacebook
     },
     {
