@@ -2,6 +2,8 @@ import type { RequestEvent } from '@sveltejs/kit';
 import { eq } from 'drizzle-orm';
 import { sha256 } from '@oslojs/crypto/sha2';
 import { encodeBase64url, encodeHexLowerCase } from '@oslojs/encoding';
+import { passwordResetToken, user } from '$lib/server/db/schema';
+import { generateResetToken, hashPassword } from '$lib/utils/auth';
 import { db } from '$lib/server/db';
 import * as table from '$lib/server/db/schema';
 
@@ -31,7 +33,7 @@ export async function validateSessionToken(token: string) {
 	const [result] = await db
 		.select({
 			// Adjust user table here to tweak returned data
-			user: { id: table.user.id, username: table.user.username },
+			user: { id: table.user.id, username: table.user.username, email: table.user.email },
 			session: table.session
 		})
 		.from(table.session)
@@ -79,3 +81,32 @@ export function deleteSessionTokenCookie(event: RequestEvent) {
 		path: '/'
 	});
 }
+
+export async function requestPasswordReset(email: string) {
+	const existingUser = await db.select().from(user).where(eq(user.email, email)).get();
+	if (!existingUser) return;
+  
+	const token = generateResetToken();
+	const expiresAt = new Date(Date.now() + 1000 * 60 * 15); 
+  
+	await db.insert(passwordResetToken).values({
+	  id: token,
+	  userId: existingUser.id,
+	  expiresAt: expiresAt
+	});
+  
+	// Send email 
+	console.log(`Reset Link: http://localhost:5173/reset-password?token=${token}`);
+  }
+  
+  export async function resetPassword(token: string, newPassword: string) {
+	const record = await db.select().from(passwordResetToken).where(eq(passwordResetToken.id, token)).get();
+	if (!record || record.expiresAt.getTime() < Date.now()) {
+	  throw new Error('Invalid or expired token');
+	}
+  
+	const newHashedPassword = await hashPassword(newPassword);
+  
+	await db.update(user).set({ passwordHash: newHashedPassword }).where(eq(user.id, record.userId));
+	await db.delete(passwordResetToken).where(eq(passwordResetToken.id, token));
+  }
