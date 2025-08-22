@@ -9,7 +9,8 @@ import { eq } from 'drizzle-orm';
 
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		return redirect(302, '/auth/lucia');
+		/* return redirect(302, '/auth/lucia'); */
+		return redirect(302, '/main');
 	}
 	return {};
 };
@@ -63,7 +64,8 @@ export const actions: Actions = {
 			return fail(500, { message: 'Email already in used' });
 		}
 
-		return redirect(302, '/auth/lucia');
+		/* return redirect(302, '/auth/lucia'); */
+		return redirect(302, '/main');
 	}
 };
 

@@ -54,7 +54,7 @@ export const actions: Actions = {
 
 	updateNote: async ({ request, locals }) => {
 		const session = locals.session;
-		if (!session) throw redirect(302, '/login');
+		if (!session) throw redirect(302, '/login-page');
 
 		const formData = await request.formData();
 		const id = formData.get('id');
@@ -91,7 +91,7 @@ export const actions: Actions = {
 
 	deleteNote: async ({ request, locals }) => {
 		const session = locals.session;
-		if (!session) throw redirect(302, '/login');
+		if (!session) throw redirect(302, '/login-page');
 
 		const formData = await request.formData();
 		const id = formData.get('id');
@@ -122,6 +122,6 @@ export const actions: Actions = {
 	},
 	logout: async ({ cookies }) => {
 		cookies.delete('session', { path: '/' }); 
-		throw redirect(302, '/auth/lucia');
+		throw redirect(302, '/main');
 	}
 };

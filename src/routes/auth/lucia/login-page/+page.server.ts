@@ -9,7 +9,8 @@ import type { Actions, PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		return redirect(302, '/auth/lucia');
+		/*return redirect(302, '/auth/lucia');*/
+		return redirect(302, '/main');
 	}
 	return {};
 };
@@ -73,7 +74,9 @@ export const actions: Actions = {
 		});
 
 		try {
-			await db.insert(table.user).values({ id: userId, username, passwordHash, email: `${username}@example.com` });
+			await db
+				.insert(table.user)
+				.values({ id: userId, username, passwordHash, email: `${username}@example.com` });
 
 			const sessionToken = auth.generateSessionToken();
 			const session = await auth.createSession(sessionToken, userId);
@@ -81,7 +84,8 @@ export const actions: Actions = {
 		} catch (e) {
 			return fail(500, { message: 'An error has occurred' });
 		}
-		return redirect(302, '/auth/lucia');
+		/* return redirect(302, '/auth/lucia'); */
+		return redirect(302, '/main');
 	}
 };
 

@@ -5,7 +5,7 @@
   
     async function submit(event: SubmitEvent) {
       event.preventDefault();
-      const res = await fetch('/auth/lucia/forgot-password', {   
+      const res = await fetch('/auth/lucia/forgotpassword-page', {   
         method: 'POST',
         body: new FormData(event.target as HTMLFormElement),
       });
