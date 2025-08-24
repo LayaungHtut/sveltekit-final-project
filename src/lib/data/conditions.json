@@ -1,0 +1,1159 @@
+[
+  {
+    "id": "depression",
+    "title": "Depression",
+    "description": "Depression is a serious and persistent mental health condition that goes beyond ordinary sadness or temporary low moods. It affects how people think, feel, and behave, often leading to difficulties in daily functioning such as work, school, or relationships. People with depression may experience hopelessness, loss of interest in enjoyable activities, fatigue, changes in appetite or sleep, and difficulty concentrating. If untreated, depression can significantly impact quality of life and may even lead to suicidal thoughts.",
+    "causes": [
+      "Genetic predisposition: A family history of depression or mood disorders can increase the likelihood of developing depression.",
+      "Biological and chemical imbalances in the brain, particularly involving neurotransmitters such as serotonin, dopamine, and norepinephrine.",
+      "Chronic stress, past trauma, abuse, or major life events such as the loss of a loved one, divorce, or financial struggles.",
+      "Medical conditions such as chronic illness, hormonal imbalances, or substance abuse that can contribute to depressive symptoms."
+    ],
+    "treatments": [
+      "Psychotherapy, especially Cognitive Behavioral Therapy (CBT), which helps individuals challenge negative thinking patterns and develop healthier coping strategies.",
+      "Medications such as selective serotonin reuptake inhibitors (SSRIs) and serotonin-norepinephrine reuptake inhibitors (SNRIs), which help regulate mood.",
+      "Lifestyle changes like regular physical exercise, maintaining a balanced diet, practicing mindfulness, journaling, and ensuring adequate sleep.",
+      "Support groups, peer counseling, and open communication with trusted friends or family members to reduce feelings of isolation."
+    ]
+  },
+  {
+    "id": "anxiety",
+    "title": "Anxiety Disorder",
+    "description": "Anxiety disorders involve intense, excessive, and often uncontrollable feelings of fear, worry, or nervousness. Unlike normal anxiety that arises in response to real stressors, anxiety disorders cause persistent distress that interferes with everyday activities. Symptoms may include restlessness, rapid heartbeat, difficulty breathing, muscle tension, difficulty sleeping, and intrusive thoughts of danger or worst-case scenarios. These conditions can range from generalized anxiety disorder (GAD) to panic disorder, social anxiety disorder, and phobias.",
+    "causes": [
+      "Stressful or traumatic life experiences such as abuse, accidents, or sudden loss, which can leave long-lasting emotional effects.",
+      "Genetic factors and family history, as anxiety disorders often run in families, indicating a hereditary component.",
+      "Overactivity in certain brain circuits related to fear and stress response, particularly the amygdala and prefrontal cortex.",
+      "Environmental pressures such as high academic or work expectations, chronic health problems, or substance misuse."
+    ],
+    "treatments": [
+      "Psychotherapy, especially Cognitive Behavioral Therapy (CBT), which helps patients identify and challenge irrational fears, and exposure therapy, which gradually reduces sensitivity to triggers.",
+      "Medications, including anti-anxiety medications such as benzodiazepines (for short-term relief) and antidepressants like SSRIs or SNRIs (for long-term management).",
+      "Relaxation techniques and holistic approaches such as deep breathing exercises, meditation, yoga, or progressive muscle relaxation to calm the nervous system.",
+      "Lifestyle adjustments, including reducing caffeine intake, maintaining regular physical activity, developing strong social support networks, and practicing time management to reduce stress."
+    ]
+  },
+  {
+    "id": "bipolar",
+    "title": "Bipolar Disorder",
+    "description": "Bipolar disorder is a complex mental health condition characterized by extreme fluctuations in mood, energy, and activity levels. Individuals with bipolar disorder experience episodes of mania or hypomania, marked by elevated mood, increased energy, impulsive behavior, and sometimes irritability, alternating with periods of depression, characterized by persistent sadness, low energy, and loss of interest in activities once enjoyed. These mood swings can disrupt work, school, relationships, and overall quality of life. If untreated, bipolar disorder can lead to significant functional impairment and increased risk of self-harm or suicidal behavior.",
+    "causes": [
+      "Genetic predisposition: Having a family history of bipolar disorder significantly increases the likelihood of developing the condition, suggesting a hereditary component.",
+      "Neurochemical and biological factors, particularly imbalances in neurotransmitters such as dopamine, serotonin, and norepinephrine, which play a role in mood regulation.",
+      "Stressful life events or trauma, including abuse, loss, or major life transitions, which can trigger mood episodes in predisposed individuals.",
+      "Medical conditions and substance misuse, including sleep disorders, thyroid problems, or drug and alcohol use, which can exacerbate symptoms and mood instability."
+    ],
+    "treatments": [
+      "Mood-stabilizing medications, such as lithium or anticonvulsants, which help regulate mood swings and prevent relapse into manic or depressive episodes.",
+      "Psychotherapy approaches, including Cognitive Behavioral Therapy (CBT) and psychoeducation, to provide coping strategies, emotional regulation skills, and education about the disorder.",
+      "Lifestyle management strategies, such as maintaining consistent sleep patterns, engaging in regular physical activity, managing stress, and avoiding substance use.",
+      "Ongoing monitoring by healthcare professionals to detect early warning signs of mood changes and to adjust treatment plans proactively."
+    ]
+  },
+  {
+    "id": "ptsd",
+    "title": "Post-Traumatic Stress Disorder (PTSD)",
+    "description": "PTSD is a severe and persistent mental health condition that develops after exposure to a traumatic event, such as physical assault, combat, accidents, or natural disasters. Individuals with PTSD may experience intrusive memories, flashbacks, nightmares, intense emotional distress, and heightened physiological arousal. They often exhibit avoidance of reminders of the trauma, emotional numbness, and difficulties in relationships and daily functioning. Left untreated, PTSD can severely impact overall quality of life and may lead to co-occurring conditions such as depression, anxiety, or substance abuse.",
+    "causes": [
+      "Exposure to traumatic events, including personal assault, war-related experiences, accidents, or witnessing life-threatening events, which can overwhelm coping mechanisms.",
+      "Biological factors, such as genetic predisposition, dysregulation of the hypothalamic-pituitary-adrenal (HPA) axis, and altered brain structures like the amygdala and hippocampus, which affect stress response.",
+      "Psychological vulnerabilities, including prior mental health conditions, low resilience, or inadequate coping skills, which can increase susceptibility.",
+      "Environmental factors, including lack of social support, chronic stress, or ongoing life challenges, which can worsen the impact of trauma and hinder recovery."
+    ],
+    "treatments": [
+      "Trauma-focused psychotherapy, such as Cognitive Processing Therapy (CPT), Prolonged Exposure (PE), and Eye Movement Desensitization and Reprocessing (EMDR), which help process traumatic memories and reduce symptoms.",
+      "Medications, including selective serotonin reuptake inhibitors (SSRIs) or serotonin-norepinephrine reuptake inhibitors (SNRIs), to alleviate symptoms of anxiety, depression, or hyperarousal.",
+      "Support groups and peer counseling to provide understanding, validation, and strategies for coping with the effects of trauma.",
+      "Lifestyle interventions, including stress reduction techniques, mindfulness, regular physical activity, and maintaining a structured daily routine to stabilize emotional and physical health."
+    ]
+  },
+  {
+    "id": "ocd",
+    "title": "Obsessive-Compulsive Disorder (OCD)",
+    "description": "OCD is a chronic mental health disorder characterized by the presence of obsessions—persistent, unwanted, and intrusive thoughts, images, or urges—and compulsions, which are repetitive behaviors or mental acts performed in response to the obsessions. These patterns are time-consuming, distressing, and interfere significantly with daily life, work, and relationships. Common compulsions include excessive cleaning, checking, counting, or repeating actions, often in an attempt to prevent feared outcomes or reduce anxiety. If untreated, OCD can lead to severe impairment and a diminished quality of life.",
+    "causes": [
+      "Genetic predisposition and family history, indicating a hereditary component to OCD susceptibility.",
+      "Neurobiological factors, particularly abnormalities in the cortico-striatal-thalamo-cortical (CSTC) circuits and imbalances in serotonin neurotransmission.",
+      "Environmental stressors, including traumatic experiences or high-stress situations that can trigger or exacerbate symptoms.",
+      "Psychological factors, such as perfectionism, heightened responsibility, or intolerance of uncertainty, which may contribute to the development and maintenance of obsessions and compulsions."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT), especially Exposure and Response Prevention (ERP), which involves gradual exposure to anxiety-provoking stimuli while preventing compulsive behaviors.",
+      "Medications such as SSRIs, which can help regulate serotonin levels and reduce obsessive and compulsive symptoms.",
+      "Psychoeducation and support for both individuals and families to understand the disorder and develop strategies for managing symptoms.",
+      "Complementary approaches, including mindfulness, relaxation techniques, and stress management, to improve overall coping and reduce symptom severity."
+    ]
+  },
+  {
+    "id": "borderline_personality",
+    "title": "Borderline Personality Disorder (BPD)",
+    "description": "BPD is a mental health disorder characterized by pervasive instability in moods, self-image, interpersonal relationships, and behavior. Individuals often experience intense emotional swings, fear of abandonment, and impulsive actions that can disrupt daily life.",
+    "causes": [
+      "Genetic factors and family history of personality disorders.",
+      "Childhood trauma or abuse.",
+      "Neurobiological differences in brain areas regulating emotion.",
+      "Environmental stressors and unstable relationships."
+    ],
+    "treatments": [
+      "Dialectical Behavior Therapy (DBT) to manage emotions and improve relationships.",
+      "Cognitive Behavioral Therapy (CBT) for behavioral and thought pattern changes.",
+      "Medications to treat mood swings, depression, or anxiety.",
+      "Group therapy and social support networks."
+    ]
+  },
+  {
+    "id": "phobias",
+    "title": "Phobias",
+    "description": "Phobias are a type of anxiety disorder involving an intense, irrational fear of specific objects, activities, or situations. This fear can interfere with everyday life and lead to avoidance behaviors.",
+    "causes": [
+      "Genetic predisposition and family history.",
+      "Learned responses from negative or traumatic experiences.",
+      "Overactive fear-processing areas in the brain.",
+      "Stressful environmental factors."
+    ],
+    "treatments": [
+      "Exposure therapy gradually introducing the feared object or situation.",
+      "Cognitive Behavioral Therapy (CBT) to challenge irrational beliefs.",
+      "Medications such as anti-anxiety drugs or SSRIs.",
+      "Relaxation and mindfulness techniques."
+    ]
+  },
+  {
+    "id": "dissociative_disorders",
+    "title": "Dissociative Disorders",
+    "description": "Dissociative disorders involve disruptions in consciousness, identity, memory, and perception. Individuals may experience amnesia, depersonalization, or alternate identities, often as a response to trauma.",
+    "causes": [
+      "Severe trauma, often during childhood.",
+      "Stressful or abusive environments.",
+      "Psychological defense mechanisms to cope with trauma.",
+      "Genetic vulnerability to mental health disorders."
+    ],
+    "treatments": [
+      "Psychotherapy, including trauma-focused therapy and CBT.",
+      "Medications for co-occurring conditions such as depression or anxiety.",
+      "Stress management techniques.",
+      "Support from family or peer groups."
+    ]
+  },
+  {
+    "id": "somatic_symptom_disorder",
+    "title": "Somatic Symptom Disorder",
+    "description": "This disorder involves excessive focus on physical symptoms, causing significant distress and impairment. Symptoms may or may not be linked to a medical condition, but the individual’s anxiety about health is disproportionate.",
+    "causes": [
+      "Psychological factors including anxiety or past trauma.",
+      "Chronic medical conditions increasing health concerns.",
+      "Family history of somatic disorders.",
+      "Stressful life events."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address health anxieties.",
+      "Medications for anxiety or depression if present.",
+      "Stress reduction strategies.",
+      "Regular medical follow-ups to manage symptoms."
+    ]
+  },
+  {
+    "id": "impulse_control_disorders",
+    "title": "Impulse Control Disorders",
+    "description": "These disorders are characterized by the inability to resist urges or impulses that may harm oneself or others. Common types include kleptomania, pyromania, and intermittent explosive disorder.",
+    "causes": [
+      "Genetic predisposition.",
+      "Brain abnormalities affecting impulse control.",
+      "Environmental factors and learned behaviors.",
+      "Stressful life experiences."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to control impulses.",
+      "Medications such as SSRIs or mood stabilizers.",
+      "Behavioral interventions to reinforce positive behaviors.",
+      "Support groups for accountability and coping strategies."
+    ]
+  },
+  {
+    "id": "factitious_disorder",
+    "title": "Factitious Disorder",
+    "description": "Factitious disorder is a mental condition in which an individual deliberately produces, feigns, or exaggerates symptoms of illness to assume the patient role. It can lead to unnecessary medical procedures and significant distress.",
+    "causes": [
+      "Psychological needs for attention or care.",
+      "Past trauma or neglect.",
+      "Personality traits or disorders.",
+      "Environmental reinforcement of the sick role."
+    ],
+    "treatments": [
+      "Psychotherapy to address underlying psychological needs.",
+      "Medications if co-occurring mental health conditions exist.",
+      "Structured medical monitoring to avoid unnecessary procedures.",
+      "Supportive care and family involvement."
+    ]
+  },
+  {
+    "id": "neurocognitive_disorders",
+    "title": "Neurocognitive Disorders",
+    "description": "Neurocognitive disorders involve a decline in cognitive functions such as memory, attention, learning, and executive function. Examples include Alzheimer’s disease and other dementias.",
+    "causes": [
+      "Aging and neurodegeneration.",
+      "Genetic predisposition.",
+      "Brain injuries or infections.",
+      "Chronic medical conditions affecting brain function."
+    ],
+    "treatments": [
+      "Cognitive rehabilitation therapy.",
+      "Medications to slow progression or manage symptoms.",
+      "Lifestyle modifications including mental stimulation and exercise.",
+      "Supportive care for patients and caregivers."
+    ]
+  },
+  {
+    "id": "paraphilic_disorders",
+    "title": "Paraphilic Disorders",
+    "description": "Paraphilic disorders involve intense and persistent sexual interests in atypical objects, situations, or individuals, causing distress or impairment in social, occupational, or other areas of functioning.",
+    "causes": [
+      "Psychological and developmental factors.",
+      "Early experiences shaping sexual behavior.",
+      "Brain structure or neurochemical differences.",
+      "Environmental influences."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address behavior and thoughts.",
+      "Medications to reduce sexual urges or compulsions.",
+      "Behavioral interventions with monitoring.",
+      "Supportive therapy and rehabilitation programs."
+    ]
+  },
+  {
+    "id": "sleep_wake_disorders",
+    "title": "Sleep-Wake Disorders",
+    "description": "Sleep-wake disorders include conditions affecting the timing, quality, or duration of sleep, resulting in daytime distress or impairment. Examples include insomnia, narcolepsy, and sleep apnea.",
+    "causes": [
+      "Stress and lifestyle factors disrupting sleep routines.",
+      "Medical conditions affecting sleep.",
+      "Neurological or psychiatric conditions.",
+      "Substance use or environmental disturbances."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy for Insomnia (CBT-I).",
+      "Medications to manage sleep disturbances.",
+      "Lifestyle modifications including sleep hygiene and routines.",
+      "Treatment of underlying medical or psychiatric conditions."
+    ]
+  },
+  {
+    "id": "schizophrenia",
+    "title": "Schizophrenia",
+    "description": "Schizophrenia is a chronic and severe mental disorder that affects how a person thinks, feels, and behaves. Individuals with schizophrenia may appear to have lost touch with reality, experiencing hallucinations, delusions, disorganized thinking, and abnormal behaviors. These symptoms can severely disrupt daily functioning, social relationships, and occupational performance. If untreated, schizophrenia can lead to long-term disability and decreased quality of life.",
+    "causes": [
+      "Genetic predisposition: Having a close relative with schizophrenia increases the likelihood of developing the condition.",
+      "Neurochemical imbalances, particularly involving dopamine and glutamate pathways in the brain.",
+      "Structural and functional brain abnormalities detected through neuroimaging studies.",
+      "Environmental stressors, prenatal exposure to infections or malnutrition, and psychosocial factors."
+    ],
+    "treatments": [
+      "Antipsychotic medications, such as atypical antipsychotics, to reduce symptoms like hallucinations and delusions.",
+      "Psychotherapy, including Cognitive Behavioral Therapy (CBT) to address distorted thinking patterns.",
+      "Social skills training and vocational rehabilitation to improve daily functioning.",
+      "Family education and support programs to reduce stress and enhance coping strategies."
+    ]
+  },
+  {
+    "id": "major_neurocognitive",
+    "title": "Major Neurocognitive Disorder",
+    "description": "Major Neurocognitive Disorder, previously known as dementia, involves significant cognitive decline in memory, thinking, language, and executive functioning. It impairs daily activities and independence. Symptoms can progress over time, severely affecting quality of life.",
+    "causes": [
+      "Neurodegenerative diseases, such as Alzheimer's disease or Parkinson's disease.",
+      "Vascular conditions that reduce blood flow to the brain.",
+      "Genetic mutations and hereditary predispositions.",
+      "Traumatic brain injury or chronic substance abuse affecting brain function."
+    ],
+    "treatments": [
+      "Medications to slow cognitive decline or manage behavioral symptoms.",
+      "Cognitive rehabilitation and memory training exercises.",
+      "Lifestyle interventions including mental stimulation, physical activity, and balanced nutrition.",
+      "Support for caregivers and structured daily routines to maintain functioning."
+    ]
+  },
+  {
+    "id": "premenstrual_dysphoric",
+    "title": "Premenstrual Dysphoric Disorder (PMDD)",
+    "description": "PMDD is a severe form of premenstrual syndrome characterized by intense emotional, behavioral, and physical symptoms occurring in the luteal phase of the menstrual cycle. Symptoms include irritability, anxiety, depression, fatigue, and physical discomfort, affecting daily life and relationships.",
+    "causes": [
+      "Hormonal fluctuations, particularly estrogen and progesterone changes during the menstrual cycle.",
+      "Neurochemical sensitivities affecting serotonin regulation.",
+      "Genetic predisposition and family history of mood disorders.",
+      "Psychological stressors that exacerbate emotional symptoms."
+    ],
+    "treatments": [
+      "Medications including SSRIs, hormonal contraceptives, or GnRH agonists to stabilize mood.",
+      "Lifestyle changes such as regular exercise, balanced diet, and adequate sleep.",
+      "Cognitive Behavioral Therapy (CBT) to manage mood and stress.",
+      "Symptom tracking and coping strategies to anticipate and reduce impact."
+    ]
+  },
+  {
+    "id": "seasonal_affective",
+    "title": "Seasonal Affective Disorder (SAD)",
+    "description": "SAD is a type of depression that occurs at specific times of the year, typically during fall and winter when daylight hours are shorter. Symptoms include low mood, fatigue, hypersomnia, increased appetite, and social withdrawal, often recurring annually.",
+    "causes": [
+      "Changes in circadian rhythms due to reduced exposure to natural light.",
+      "Neurochemical imbalances, particularly serotonin and melatonin.",
+      "Genetic predisposition to mood disorders.",
+      "Environmental factors, such as geographic location and limited sunlight exposure."
+    ],
+    "treatments": [
+      "Light therapy using bright artificial light to regulate circadian rhythms.",
+      "Antidepressant medications, particularly SSRIs, to address mood symptoms.",
+      "Cognitive Behavioral Therapy (CBT) targeting negative thought patterns.",
+      "Lifestyle interventions including outdoor activity, regular exercise, and structured daily routines."
+    ]
+  },
+  {
+    "id": "trichotillomania",
+    "title": "Trichotillomania",
+    "description": "Trichotillomania is a mental health disorder characterized by an irresistible urge to pull out one's hair, leading to noticeable hair loss, distress, and social or occupational impairment. The behavior is often triggered by stress or anxiety and may be accompanied by shame or secrecy.",
+    "causes": [
+      "Genetic predisposition and family history of impulse-control disorders.",
+      "Neurobiological factors affecting reward and impulse regulation.",
+      "Environmental stressors, including trauma or high-pressure situations.",
+      "Psychological factors such as perfectionism, anxiety, or compulsive tendencies."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT), particularly Habit Reversal Training (HRT), to manage urges.",
+      "Medications such as SSRIs or other pharmacologic interventions in severe cases.",
+      "Stress management techniques including mindfulness and relaxation exercises.",
+      "Supportive therapy and psychoeducation for individuals and families."
+    ]
+  },
+  {
+    "id": "kleptomania",
+    "title": "Kleptomania",
+    "description": "Kleptomania is an impulse-control disorder marked by an uncontrollable urge to steal items that are not needed for personal use or financial gain. It leads to distress, guilt, and legal consequences, and often co-occurs with other mental health conditions.",
+    "causes": [
+      "Genetic and neurobiological factors affecting impulse control.",
+      "Dysfunction in brain regions involved in reward and decision-making.",
+      "Psychological factors, including stress, anxiety, or co-occurring mood disorders.",
+      "Environmental influences, such as early life trauma or reinforcement patterns."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address urges and maladaptive thought patterns.",
+      "Medications, including SSRIs or mood stabilizers, for impulse control.",
+      "Behavioral interventions and self-monitoring techniques.",
+      "Supportive therapy, including family or group support."
+    ]
+  },
+  {
+    "id": "pyromania",
+    "title": "Pyromania",
+    "description": "Pyromania is an impulse-control disorder characterized by repeated and deliberate fire-setting behavior without external motives such as financial gain or revenge. Individuals experience tension before setting a fire and relief or gratification afterward, causing legal and social consequences.",
+    "causes": [
+      "Genetic or neurobiological predisposition affecting impulse control.",
+      "Psychological factors such as stress, trauma, or sensation-seeking behavior.",
+      "Environmental influences, including exposure to fires or family modeling.",
+      "Co-occurring psychiatric conditions, including mood or substance use disorders."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to manage urges and develop alternative coping strategies.",
+      "Medications such as SSRIs or mood stabilizers for impulse control.",
+      "Behavioral interventions focusing on problem-solving and stress management.",
+      "Supportive therapy and monitoring to prevent dangerous behavior."
+    ]
+  },
+  {
+    "id": "intermittent_explosive",
+    "title": "Intermittent Explosive Disorder (IED)",
+    "description": "IED is characterized by repeated episodes of impulsive, aggressive, or violent behavior that are disproportionate to the triggering event. Individuals experience intense anger, irritability, and difficulty controlling impulses, often causing interpersonal, occupational, or legal problems.",
+    "causes": [
+      "Genetic predisposition and family history of mood or impulse-control disorders.",
+      "Neurobiological factors, including serotonin and prefrontal cortex dysregulation.",
+      "Environmental stressors, including trauma, abuse, or chaotic home environments.",
+      "Psychological vulnerabilities, such as poor coping mechanisms or personality traits."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to recognize triggers and manage anger.",
+      "Medications such as SSRIs or mood stabilizers to reduce aggressive impulses.",
+      "Stress reduction techniques including mindfulness and relaxation training.",
+      "Family or group therapy to enhance interpersonal skills and social support."
+    ]
+  },
+  {
+    "id": "hoarding_disorder",
+    "title": "Hoarding Disorder",
+    "description": "Hoarding disorder involves persistent difficulty discarding or parting with possessions, regardless of their actual value. This behavior results in cluttered living spaces, distress, and impairment in daily functioning, often causing social isolation or health hazards.",
+    "causes": [
+      "Genetic factors and family history of hoarding or obsessive-compulsive behaviors.",
+      "Neurobiological abnormalities in decision-making and reward processing regions.",
+      "Psychological factors, including attachment issues, perfectionism, or indecisiveness.",
+      "Environmental factors, such as childhood experiences of scarcity or trauma."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) focusing on decision-making, organization, and emotional regulation.",
+      "Medications, including SSRIs, to manage co-occurring anxiety or depression.",
+      "Skills training in organization, time management, and problem-solving.",
+      "Supportive therapy and family involvement to maintain long-term progress."
+    ]
+  },
+  {
+    "id": "body_dysmorphic_disorder",
+    "title": "Body Dysmorphic Disorder (BDD)",
+    "description": "BDD is a mental health condition where individuals are preoccupied with perceived flaws or defects in their physical appearance, often minor or imagined. This preoccupation causes significant distress, social avoidance, and impairment in daily functioning.",
+    "causes": [
+      "Genetic predisposition and family history of obsessive-compulsive or anxiety disorders.",
+      "Neurobiological factors affecting visual processing and reward pathways.",
+      "Environmental influences, including societal pressures and past trauma.",
+      "Psychological vulnerabilities such as perfectionism or low self-esteem."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to challenge distorted perceptions and reduce compulsive behaviors.",
+      "Medications, particularly SSRIs, to manage obsessive thoughts and anxiety.",
+      "Psychoeducation and support for individuals and families.",
+      "Exposure therapy or mindfulness techniques to reduce avoidance and improve social functioning."
+    ]
+  },
+  {
+    "id": "factitious_disorder_by_proxy",
+    "title": "Factitious Disorder by Proxy (FDbyP)",
+    "description": "FDbyP is a condition in which a caregiver deliberately produces or feigns symptoms in another person, usually a child, to assume the sick role by proxy. It can lead to unnecessary medical interventions and serious harm.",
+    "causes": [
+      "Psychological need for attention or caregiving validation.",
+      "History of trauma, neglect, or abuse in the caregiver.",
+      "Personality disorders or maladaptive coping mechanisms.",
+      "Environmental reinforcement for caregiving behavior."
+    ],
+    "treatments": [
+      "Psychotherapy for the caregiver to address underlying psychological issues.",
+      "Close monitoring and protective measures for the victim.",
+      "Multidisciplinary medical and mental health intervention.",
+      "Family therapy and support for healthy caregiving practices."
+    ]
+  },
+  {
+    "id": "alexithymia",
+    "title": "Alexithymia",
+    "description": "Alexithymia is a personality trait characterized by difficulty identifying, understanding, and describing emotions in oneself and others. Individuals may struggle with emotional awareness, empathy, and interpersonal relationships, leading to social and psychological challenges.",
+    "causes": [
+      "Genetic predisposition affecting emotional regulation.",
+      "Early childhood trauma or emotional neglect.",
+      "Neurobiological factors affecting brain regions related to emotion.",
+      "Chronic stress or maladaptive coping strategies."
+    ],
+    "treatments": [
+      "Psychotherapy, including Cognitive Behavioral Therapy (CBT) to enhance emotional awareness.",
+      "Emotion-focused therapy to improve identification and processing of feelings.",
+      "Social skills training and group therapy for interpersonal improvement.",
+      "Mindfulness practices to increase emotional recognition and regulation."
+    ]
+  },
+  {
+    "id": "adjustment_disorder",
+    "title": "Adjustment Disorder",
+    "description": "Adjustment disorder occurs when an individual experiences emotional or behavioral symptoms in response to a significant life stressor, such as loss, relocation, or changes in life circumstances. Symptoms include anxiety, depression, and difficulty coping, impairing daily functioning.",
+    "causes": [
+      "Major life changes or stressful events.",
+      "Lack of coping skills or social support.",
+      "Genetic and personality factors affecting resilience.",
+      "Environmental stressors and ongoing pressures."
+    ],
+    "treatments": [
+      "Psychotherapy to develop coping mechanisms and emotional regulation skills.",
+      "Short-term use of medications for anxiety or depressive symptoms if necessary.",
+      "Support groups and peer counseling to reduce isolation.",
+      "Stress management techniques including mindfulness and structured routines."
+    ]
+  },
+  {
+    "id": "reactive_attachment",
+    "title": "Reactive Attachment Disorder (RAD)",
+    "description": "RAD is a condition in children resulting from severe neglect, abuse, or frequent changes in primary caregivers, causing difficulties forming healthy emotional attachments. Symptoms include withdrawal, limited emotional responsiveness, and social difficulties.",
+    "causes": [
+      "Early childhood trauma or neglect.",
+      "Inconsistent or unavailable caregivers.",
+      "Genetic predisposition influencing attachment behaviors.",
+      "Chronic stress and environmental instability."
+    ],
+    "treatments": [
+      "Attachment-based therapy to improve emotional bonds and trust.",
+      "Family therapy and parent training to provide consistent caregiving.",
+      "Psychotherapy targeting social and emotional skills development.",
+      "Supportive educational environments to enhance social functioning."
+    ]
+  },
+  {
+    "id": "selective_mutism",
+    "title": "Selective Mutism",
+    "description": "Selective mutism is an anxiety disorder in which a child is unable to speak in certain social situations, despite speaking comfortably in familiar settings. This behavior interferes with social, educational, and occupational development.",
+    "causes": [
+      "Genetic predisposition to anxiety disorders.",
+      "Temperamental traits such as shyness or social inhibition.",
+      "Environmental stressors and trauma.",
+      "Family dynamics reinforcing avoidance behaviors."
+    ],
+    "treatments": [
+      "Behavioral therapy, including gradual exposure and reinforcement for speaking.",
+      "Cognitive Behavioral Therapy (CBT) to address underlying anxiety.",
+      "Family therapy and parent training to support communication skills.",
+      "School-based interventions and social skills training."
+    ]
+  },
+  {
+    "id": "catatonia",
+    "title": "Catatonia",
+    "description": "Catatonia is a neuropsychiatric syndrome characterized by abnormal motor behaviors, such as immobility, stupor, mutism, or repetitive movements. It may occur in the context of psychiatric or medical conditions, causing functional impairment and medical complications.",
+    "causes": [
+      "Severe psychiatric conditions, such as schizophrenia or mood disorders.",
+      "Medical conditions affecting brain function, including infections or metabolic imbalances.",
+      "Neurobiological factors influencing motor control and behavior.",
+      "Trauma or environmental stressors precipitating episodes."
+    ],
+    "treatments": [
+      "Benzodiazepines to relieve acute catatonic symptoms.",
+      "Electroconvulsive therapy (ECT) for treatment-resistant cases.",
+      "Psychiatric evaluation and management of underlying conditions.",
+      "Supportive care including hydration, nutrition, and monitoring."
+    ]
+  },
+  {
+    "id": "conversion_disorder",
+    "title": "Conversion Disorder",
+    "description": "Conversion disorder, also known as functional neurological symptom disorder, involves neurological symptoms such as paralysis, tremors, or sensory loss that cannot be explained by medical conditions. Symptoms cause significant distress and impairment in daily life.",
+    "causes": [
+      "Psychological stressors or trauma triggering somatic symptoms.",
+      "Personality traits influencing emotional expression.",
+      "Neurobiological mechanisms affecting brain-body communication.",
+      "Environmental factors, including learned behaviors or modeling."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address stress and symptom management.",
+      "Physical therapy to restore functional movement and strength.",
+      "Psychotherapy to process trauma or psychological triggers.",
+      "Education and support for patients and families."
+    ]
+  },
+  {
+    "id": "somnambulism",
+    "title": "Somnambulism (Sleepwalking)",
+    "description": "Somnambulism is a sleep disorder in which individuals engage in complex behaviors, such as walking or performing tasks, while remaining in a sleep state. Episodes can be dangerous and disrupt sleep quality.",
+    "causes": [
+      "Genetic predisposition and family history of sleepwalking.",
+      "Sleep deprivation, stress, or irregular sleep schedules.",
+      "Certain medications or medical conditions affecting sleep.",
+      "Neurological or developmental abnormalities in brain regions controlling sleep-wake cycles."
+    ],
+    "treatments": [
+      "Improving sleep hygiene and maintaining a consistent sleep schedule.",
+      "Medications in severe cases, such as benzodiazepines.",
+      "Environmental safety measures to prevent injury during episodes.",
+      "Stress management and relaxation techniques."
+    ]
+  },
+  {
+    "id": "nightmare_disorder",
+    "title": "Nightmare Disorder",
+    "description": "Nightmare disorder involves frequent, vivid, and distressing dreams that cause awakening and difficulty returning to sleep. Symptoms may lead to anxiety, fear of sleeping, and impaired daytime functioning.",
+    "causes": [
+      "Psychological stress, trauma, or anxiety disorders.",
+      "Sleep deprivation or irregular sleep patterns.",
+      "Medications affecting the central nervous system.",
+      "Substance use, including alcohol or recreational drugs."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) for nightmare management.",
+      "Imagery rehearsal therapy to reframe and reduce nightmares.",
+      "Improved sleep hygiene and consistent bedtime routines.",
+      "Medications, including prazosin or other agents, in severe cases."
+    ]
+  },
+  {
+    "id": "insomnia_disorder",
+    "title": "Insomnia Disorder",
+    "description": "Insomnia disorder is characterized by difficulty initiating or maintaining sleep, resulting in daytime fatigue, impaired concentration, and decreased quality of life. Chronic insomnia can increase the risk of mental and physical health problems.",
+    "causes": [
+      "Psychological stress, anxiety, or depression.",
+      "Poor sleep habits or inconsistent routines.",
+      "Medical conditions causing discomfort or pain.",
+      "Environmental disturbances and lifestyle factors."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy for Insomnia (CBT-I) to modify thoughts and behaviors affecting sleep.",
+      "Medications for short-term symptom relief if necessary.",
+      "Sleep hygiene education and environmental modifications.",
+      "Relaxation techniques including mindfulness, meditation, and progressive muscle relaxation."
+    ]
+  },
+  {
+    "id": "narcolepsy",
+    "title": "Narcolepsy",
+    "description": "Narcolepsy is a neurological sleep disorder characterized by excessive daytime sleepiness, sudden sleep attacks, cataplexy, and disrupted nighttime sleep. It affects daily functioning, work, and social relationships.",
+    "causes": [
+      "Genetic predisposition affecting sleep-wake regulation.",
+      "Deficiency of hypocretin (orexin) neurotransmitters in the brain.",
+      "Autoimmune processes targeting brain regions controlling sleep.",
+      "Environmental triggers, such as infections or stress."
+    ],
+    "treatments": [
+      "Medications to promote wakefulness, such as modafinil or amphetamines.",
+      "Medications for cataplexy, including antidepressants.",
+      "Scheduled naps and sleep hygiene strategies.",
+      "Psychotherapy and supportive care for coping with symptoms."
+    ]
+  },
+  {
+    "id": "restless_legs",
+    "title": "Restless Legs Syndrome (RLS)",
+    "description": "RLS is a neurological disorder characterized by uncomfortable sensations in the legs and an irresistible urge to move them, especially during rest or at night. Symptoms can disrupt sleep and daily functioning.",
+    "causes": [
+      "Genetic predisposition and family history.",
+      "Iron deficiency or other metabolic imbalances.",
+      "Medications, such as antihistamines or antidepressants.",
+      "Chronic conditions such as kidney disease or diabetes."
+    ],
+    "treatments": [
+      "Iron supplementation if deficiency is present.",
+      "Medications such as dopamine agonists or anticonvulsants.",
+      "Lifestyle modifications, including exercise and leg stretches.",
+      "Sleep hygiene practices to improve rest and reduce symptoms."
+    ]
+  },
+  {
+    "id": "acute_stress_disorder",
+    "title": "Acute Stress Disorder",
+    "description": "Acute Stress Disorder occurs shortly after exposure to a traumatic event and involves symptoms such as intrusive memories, dissociation, and heightened arousal. If untreated, it may progress to PTSD.",
+    "causes": [
+      "Recent exposure to trauma such as accidents, assault, or disasters.",
+      "Genetic and neurobiological susceptibility to stress disorders.",
+      "Pre-existing anxiety or mood disorders.",
+      "Insufficient coping skills or social support during trauma recovery."
+    ],
+    "treatments": [
+      "Brief trauma-focused therapy to reduce distress and prevent PTSD.",
+      "Medications for anxiety or sleep disturbances if necessary.",
+      "Cognitive Behavioral Therapy (CBT) to process traumatic experiences.",
+      "Social support and psychoeducation for coping strategies."
+    ]
+  },
+  {
+    "id": "dissociative_identity_disorder",
+    "title": "Dissociative Identity Disorder",
+    "description": "Dissociative Identity Disorder (DID) is characterized by the presence of two or more distinct personality states, along with gaps in memory and identity. It often results from severe trauma during early childhood, affecting daily functioning.",
+    "causes": [
+      "Severe childhood trauma, including physical, sexual, or emotional abuse.",
+      "Psychological and environmental stressors during development.",
+      "Genetic or neurobiological vulnerability to dissociation.",
+      "Inadequate coping mechanisms for managing trauma."
+    ],
+    "treatments": [
+      "Psychotherapy, including trauma-focused approaches and integration therapy.",
+      "Cognitive Behavioral Therapy (CBT) to manage dissociative symptoms.",
+      "Medication for co-occurring conditions like depression or anxiety.",
+      "Supportive therapy and structured routines to stabilize identity and functioning."
+    ]
+  },
+  {
+    "id": "dissociative_amnesia",
+    "title": "Dissociative Amnesia",
+    "description": "Dissociative amnesia involves an inability to recall important personal information, usually following trauma or stress. The memory loss is not explained by neurological or medical conditions and significantly affects daily life.",
+    "causes": [
+      "Severe stress or traumatic experiences.",
+      "Psychological factors affecting memory encoding and retrieval.",
+      "Neurobiological factors influencing stress response and memory.",
+      "Personality traits contributing to dissociative coping mechanisms."
+    ],
+    "treatments": [
+      "Psychotherapy to uncover and process suppressed memories.",
+      "Cognitive Behavioral Therapy (CBT) to reduce anxiety and improve coping.",
+      "Supportive therapy to assist with daily functioning.",
+      "Stress management techniques and structured routines."
+    ]
+  },
+  {
+    "id": "dissociative_fugue",
+    "title": "Dissociative Fugue",
+    "description": "Dissociative fugue is a rare condition in which an individual unexpectedly travels away from home or work, with an inability to recall their past or identity. The episode may last hours to months and often follows trauma or severe stress.",
+    "causes": [
+      "Severe psychological trauma or stress.",
+      "Neurobiological factors affecting memory and stress regulation.",
+      "Genetic susceptibility to dissociative disorders.",
+      "Personality and coping traits influencing response to trauma."
+    ],
+    "treatments": [
+      "Psychotherapy to recover memories and process trauma.",
+      "Cognitive Behavioral Therapy (CBT) for symptom management.",
+      "Supportive therapy and structured routines to reintegrate identity.",
+      "Family or social support for emotional stabilization."
+    ]
+  },
+  {
+    "id": "depersonalization_derealization",
+    "title": "Depersonalization/Derealization Disorder",
+    "description": "Depersonalization/Derealization Disorder is characterized by persistent or recurrent experiences of feeling detached from oneself (depersonalization) or the surrounding environment (derealization). Symptoms interfere with perception, emotion, and daily functioning.",
+    "causes": [
+      "Severe stress, trauma, or anxiety disorders.",
+      "Genetic and neurobiological vulnerabilities.",
+      "Neurological factors affecting self-perception and consciousness.",
+      "Substance use or sleep deprivation triggering episodes."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) targeting dissociative thoughts and anxiety.",
+      "Psychotherapy to process trauma and improve emotional awareness.",
+      "Medications for co-occurring anxiety or depression if necessary.",
+      "Mindfulness practices and grounding techniques to enhance self-perception."
+    ]
+  },
+  {
+    "id": "somatic_symptom_disorder",
+    "title": "Somatic Symptom Disorder",
+    "description": "Somatic Symptom Disorder involves persistent physical symptoms that are distressing or disrupt daily life, often accompanied by excessive thoughts, feelings, or behaviors related to the symptoms. The symptoms are not intentionally produced and may not have a clear medical explanation.",
+    "causes": [
+      "Genetic predisposition to anxiety or somatic disorders.",
+      "Psychological stress or trauma contributing to symptom manifestation.",
+      "Neurobiological factors affecting pain perception and stress response.",
+      "Environmental reinforcement of health-related anxiety."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to reduce symptom-focused anxiety.",
+      "Medications for co-occurring anxiety or depressive symptoms.",
+      "Psychoeducation and support to improve coping strategies.",
+      "Stress management, relaxation techniques, and lifestyle modifications."
+    ]
+  },
+  {
+    "id": "illness_anxiety_disorder",
+    "title": "Illness Anxiety Disorder",
+    "description": "Illness Anxiety Disorder is characterized by excessive worry about having or developing a serious illness, often without significant somatic symptoms. Individuals frequently seek medical reassurance and experience high anxiety about health.",
+    "causes": [
+      "Genetic and familial predisposition to anxiety disorders.",
+      "Psychological factors, including heightened health-related vigilance.",
+      "Neurobiological factors affecting threat perception.",
+      "Stressful life events or previous illness experiences."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) focusing on health anxiety and reassurance-seeking behaviors.",
+      "Medications such as SSRIs for persistent anxiety.",
+      "Psychoeducation to improve understanding and coping with health concerns.",
+      "Stress reduction techniques and supportive therapy."
+    ]
+  },
+  {
+    "id": "conversion_disorder",
+    "title": "Conversion Disorder",
+    "description": "Conversion Disorder, also known as Functional Neurological Symptom Disorder, involves neurological symptoms such as paralysis, tremors, or non-epileptic seizures without a medical explanation. Symptoms cause distress and functional impairment.",
+    "causes": [
+      "Severe psychological stress or trauma.",
+      "Personality traits influencing symptom expression.",
+      "Neurobiological mechanisms affecting brain-body communication.",
+      "Environmental and learned behaviors reinforcing symptoms."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address stress and symptom management.",
+      "Physical therapy to restore movement and function.",
+      "Psychotherapy to process underlying trauma.",
+      "Supportive care and education for patients and families."
+    ]
+  },
+  {
+    "id": "factitious_disorder",
+    "title": "Factitious Disorder",
+    "description": "Factitious Disorder involves the deliberate fabrication or exaggeration of medical or psychological symptoms for attention or sympathy. The behavior is not motivated by external incentives such as financial gain.",
+    "causes": [
+      "Psychological need for attention or validation.",
+      "History of trauma, neglect, or early illness experiences.",
+      "Personality disorders or maladaptive coping strategies.",
+      "Environmental reinforcement for illness behaviors."
+    ],
+    "treatments": [
+      "Psychotherapy to address underlying psychological needs.",
+      "Monitoring and supervision to prevent harmful behaviors.",
+      "Supportive therapy for building healthier coping mechanisms.",
+      "Family therapy and psychoeducation for context and intervention."
+    ]
+  },
+  {
+    "id": "paranoid_personality_disorder",
+    "title": "Paranoid Personality Disorder",
+    "description": "Paranoid Personality Disorder is characterized by pervasive distrust and suspicion of others, interpreting motives as malevolent. This often leads to social isolation, relationship difficulties, and hypersensitivity to perceived criticism.",
+    "causes": [
+      "Genetic predisposition and family history of personality or psychotic disorders.",
+      "Early life experiences including trauma or neglect.",
+      "Neurobiological factors influencing threat perception.",
+      "Cognitive biases that enhance suspicion and vigilance."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to challenge suspicious thoughts.",
+      "Psychotherapy focused on interpersonal skills and trust-building.",
+      "Medications for co-occurring anxiety or mood symptoms if necessary.",
+      "Psychoeducation and supportive therapy to manage functioning."
+    ]
+  },
+  {
+    "id": "schizoid_personality_disorder",
+    "title": "Schizoid Personality Disorder",
+    "description": "Schizoid Personality Disorder involves detachment from social relationships and a restricted range of emotional expression. Individuals often prefer solitary activities and may appear indifferent to praise or criticism.",
+    "causes": [
+      "Genetic and familial predisposition.",
+      "Early childhood experiences of emotional neglect or limited attachment.",
+      "Neurobiological factors affecting social behavior and emotion.",
+      "Personality traits predisposing to introversion and social detachment."
+    ],
+    "treatments": [
+      "Psychotherapy to enhance social skills and emotional awareness.",
+      "Supportive therapy to improve interpersonal functioning.",
+      "Medications for co-occurring conditions like depression or anxiety.",
+      "Structured routines and gradual exposure to social interactions."
+    ]
+  },
+  {
+    "id": "schizotypal_personality_disorder",
+    "title": "Schizotypal Personality Disorder",
+    "description": "Schizotypal Personality Disorder is marked by acute discomfort in close relationships, cognitive or perceptual distortions, and eccentric behavior. Individuals may have odd beliefs, unusual perceptions, or peculiar speech patterns, affecting social and occupational functioning.",
+    "causes": [
+      "Genetic and familial predisposition to schizophrenia spectrum disorders.",
+      "Neurobiological factors affecting brain connectivity and perception.",
+      "Early life adversity, including trauma or neglect.",
+      "Personality traits influencing social anxiety and eccentricity."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address social anxiety and distorted thinking.",
+      "Psychotherapy to improve social skills and coping mechanisms.",
+      "Medications such as antipsychotics for severe symptoms.",
+      "Psychoeducation and structured routines to enhance daily functioning."
+    ]
+  },
+  {
+    "id": "antisocial_personality_disorder",
+    "title": "Antisocial Personality Disorder",
+    "description": "Antisocial Personality Disorder is characterized by a pervasive pattern of disregard for, and violation of, the rights of others. Individuals may exhibit deceitfulness, impulsivity, irritability, aggression, and lack of remorse, leading to legal and interpersonal difficulties.",
+    "causes": [
+      "Genetic and familial predisposition to personality disorders.",
+      "Early life experiences including neglect, abuse, or inconsistent parenting.",
+      "Neurobiological factors affecting impulse control and empathy.",
+      "Environmental influences, such as exposure to crime or maladaptive social norms."
+    ],
+    "treatments": [
+      "Psychotherapy focused on behavioral management and empathy development.",
+      "Cognitive Behavioral Therapy (CBT) to address maladaptive thought patterns.",
+      "Medications for co-occurring conditions such as depression or aggression.",
+      "Social and vocational support to promote prosocial behavior."
+    ]
+  },
+  {
+    "id": "borderline_personality_disorder",
+    "title": "Borderline Personality Disorder",
+    "description": "Borderline Personality Disorder involves pervasive instability in emotions, self-image, and interpersonal relationships. Symptoms include intense mood swings, fear of abandonment, impulsivity, and recurrent self-harm or suicidal behavior.",
+    "causes": [
+      "Genetic vulnerability and family history of mood or personality disorders.",
+      "Early childhood trauma, neglect, or abuse.",
+      "Neurobiological factors affecting emotional regulation and impulse control.",
+      "Environmental stressors and maladaptive coping mechanisms."
+    ],
+    "treatments": [
+      "Dialectical Behavior Therapy (DBT) for emotion regulation and distress tolerance.",
+      "Cognitive Behavioral Therapy (CBT) to challenge maladaptive beliefs.",
+      "Medications for co-occurring mood or anxiety disorders.",
+      "Psychoeducation, social skills training, and supportive therapy."
+    ]
+  },
+  {
+    "id": "histrionic_personality_disorder",
+    "title": "Histrionic Personality Disorder",
+    "description": "Histrionic Personality Disorder is characterized by excessive emotionality, attention-seeking behavior, and a strong desire for approval. Individuals may be dramatic, flirtatious, or easily influenced, impacting relationships and social functioning.",
+    "causes": [
+      "Genetic predisposition and family history of personality disorders.",
+      "Early childhood experiences emphasizing attention or validation.",
+      "Neurobiological factors influencing emotional regulation.",
+      "Cultural and environmental influences promoting dramatic behavior."
+    ],
+    "treatments": [
+      "Psychotherapy to develop healthy coping mechanisms and self-esteem.",
+      "Cognitive Behavioral Therapy (CBT) to address maladaptive attention-seeking behaviors.",
+      "Social skills training to improve interpersonal effectiveness.",
+      "Medications for co-occurring anxiety or depression if necessary."
+    ]
+  },
+  {
+    "id": "narcissistic_personality_disorder",
+    "title": "Narcissistic Personality Disorder",
+    "description": "Narcissistic Personality Disorder involves a pervasive pattern of grandiosity, need for admiration, and lack of empathy. Individuals may exaggerate achievements, exploit others, and struggle with interpersonal relationships.",
+    "causes": [
+      "Genetic predisposition and family history of personality traits.",
+      "Early childhood experiences, including excessive praise or neglect.",
+      "Neurobiological factors affecting self-perception and reward processing.",
+      "Environmental and cultural influences reinforcing narcissistic behaviors."
+    ],
+    "treatments": [
+      "Psychotherapy, including Cognitive Behavioral Therapy (CBT) and psychodynamic approaches.",
+      "Psychoeducation to increase self-awareness and empathy.",
+      "Medications for co-occurring mood or anxiety disorders.",
+      "Social skills training and structured behavioral interventions."
+    ]
+  },
+  {
+    "id": "avoidant_personality_disorder",
+    "title": "Avoidant Personality Disorder",
+    "description": "Avoidant Personality Disorder is characterized by extreme social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation. Individuals often avoid social situations despite a desire for relationships, leading to isolation.",
+    "causes": [
+      "Genetic and familial predisposition to anxiety or personality disorders.",
+      "Early experiences of criticism, rejection, or neglect.",
+      "Neurobiological factors influencing social anxiety and threat perception.",
+      "Temperamental traits such as shyness or high sensitivity."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to address anxiety and social avoidance.",
+      "Exposure therapy to gradually increase social interactions.",
+      "Supportive psychotherapy to build confidence and self-esteem.",
+      "Medications for co-occurring anxiety or depression if necessary."
+    ]
+  },
+  {
+    "id": "dependent_personality_disorder",
+    "title": "Dependent Personality Disorder",
+    "description": "Dependent Personality Disorder involves a pervasive and excessive need to be taken care of, leading to submissive and clinging behavior and fear of separation. Individuals may struggle with decision-making and assertiveness, impacting independence.",
+    "causes": [
+      "Genetic predisposition and family history of personality disorders.",
+      "Early experiences of overprotective parenting or attachment disruption.",
+      "Neurobiological factors influencing dependency and anxiety.",
+      "Environmental reinforcement of submissive behavior."
+    ],
+    "treatments": [
+      "Psychotherapy to build autonomy, decision-making skills, and self-confidence.",
+      "Cognitive Behavioral Therapy (CBT) for managing anxiety and dependency patterns.",
+      "Social skills training to improve interpersonal effectiveness.",
+      "Supportive therapy and gradual exposure to independent activities."
+    ]
+  },
+  {
+    "id": "obsessive_compulsive_personality_disorder",
+    "title": "Obsessive-Compulsive Personality Disorder",
+    "description": "Obsessive-Compulsive Personality Disorder is characterized by preoccupation with orderliness, perfectionism, and control. Individuals may be rigid, stubborn, and excessively focused on rules and organization, affecting relationships and flexibility.",
+    "causes": [
+      "Genetic and familial predisposition to personality traits.",
+      "Early childhood experiences emphasizing control, rules, or perfection.",
+      "Neurobiological factors influencing rigidity and cognitive control.",
+      "Environmental reinforcement of meticulous or perfectionist behaviors."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to reduce perfectionism and rigidity.",
+      "Psychotherapy focusing on flexibility, emotional awareness, and relationship skills.",
+      "Medications for co-occurring anxiety or depression if necessary.",
+      "Structured behavioral interventions to practice adaptive coping strategies."
+    ]
+  },
+  {
+    "id": "paraphilic_disorder",
+    "title": "Paraphilic Disorders",
+    "description": "Paraphilic Disorders involve intense and persistent sexual interests other than normative sexual behaviors, often causing distress or impairment to self or others. Examples include voyeurism, exhibitionism, or pedophilic disorder.",
+    "causes": [
+      "Genetic and neurobiological factors affecting sexual behavior and impulse control.",
+      "Early childhood experiences shaping sexual development.",
+      "Psychological trauma or environmental influences reinforcing atypical sexual interests.",
+      "Personality traits predisposing to compulsive or atypical behaviors."
+    ],
+    "treatments": [
+      "Cognitive Behavioral Therapy (CBT) to manage impulses and harmful behaviors.",
+      "Medications such as anti-androgens or SSRIs in severe cases.",
+      "Psychoeducation and supportive therapy to promote healthy sexual behavior.",
+      "Legal supervision and structured intervention programs when required."
+    ]
+  },
+  {
+    "id": "sexual_dysfunction_disorder",
+    "title": "Sexual Dysfunction Disorders",
+    "description": "Sexual Dysfunction Disorders involve difficulty experiencing sexual response or pleasure, including disorders of desire, arousal, orgasm, or pain during sexual activity. These conditions can affect personal relationships and self-esteem.",
+    "causes": [
+      "Biological factors such as hormonal imbalances, medications, or medical conditions.",
+      "Psychological factors including stress, anxiety, depression, or trauma.",
+      "Interpersonal issues such as relationship conflict or communication problems.",
+      "Lifestyle factors like substance use, fatigue, or poor health."
+    ],
+    "treatments": [
+      "Psychotherapy focusing on sexual functioning, communication, and intimacy.",
+      "Medications to address physiological or hormonal causes.",
+      "Couples therapy to improve relationship dynamics.",
+      "Lifestyle modifications including stress management, exercise, and healthy habits."
+    ]
+  },
+  {
+    "id": "gender_dysphoria",
+    "title": "Gender Dysphoria",
+    "description": "Gender Dysphoria involves significant distress or impairment due to a discrepancy between an individual's assigned gender at birth and their experienced or expressed gender identity. Symptoms can affect mental health, social functioning, and well-being.",
+    "causes": [
+      "Biological factors influencing gender identity development.",
+      "Genetic and hormonal influences during prenatal development.",
+      "Environmental factors, including social and cultural influences.",
+      "Psychological stress related to body incongruence or societal expectations."
+    ],
+    "treatments": [
+      "Psychotherapy and counseling to support gender identity and emotional well-being.",
+      "Social transition support, including name, pronoun, and role adjustments.",
+      "Medical interventions such as hormone therapy or surgery when appropriate.",
+      "Support groups and community resources for affirmation and social support."
+    ]
+  },
+  {
+    "id": "anorexia_nervosa",
+    "title": "Anorexia Nervosa",
+    "description": "Anorexia Nervosa is a severe eating disorder marked by an overwhelming fear of gaining weight, a distorted body image, and extreme dietary restriction leading to dangerously low body weight. Individuals with anorexia often see themselves as overweight even when they are severely underweight. The condition impacts physical health, causing malnutrition, weakened immunity, organ damage, and in severe cases, death. Psychologically, it is associated with perfectionism, obsessive thoughts about food and body size, and emotional distress. It commonly begins during adolescence and affects more females than males, though it can occur in all genders and age groups.",
+    "causes": [
+      "Genetic predisposition and family history of eating disorders or mental health issues such as anxiety or depression.",
+      "Biological abnormalities in brain chemicals that regulate hunger, satiety, and reward, particularly serotonin and dopamine imbalances.",
+      "Cultural and societal pressures that emphasize thinness, beauty standards, and diet culture, reinforced by media and social comparison.",
+      "Psychological factors such as perfectionism, obsessive tendencies, low self-esteem, and an overwhelming need for control in daily life.",
+      "Stressful life events, including bullying, family conflict, trauma, or transitions such as puberty or moving away from home.",
+      "Co-occurring psychiatric conditions such as obsessive-compulsive disorder, generalized anxiety disorder, or major depression."
+    ],
+    "treatments": [
+      "Nutritional rehabilitation with structured meal plans, monitored weight restoration, and education about balanced eating.",
+      "Cognitive-behavioral therapy (CBT) focused on challenging distorted thoughts about food, body weight, and self-worth.",
+      "Family-based therapy (FBT), particularly effective for adolescents, which involves family members actively supporting recovery.",
+      "Medical monitoring and hospitalization in severe cases where malnutrition, dehydration, or heart irregularities pose life-threatening risks.",
+      "Pharmacological interventions, particularly antidepressants or antipsychotics, to manage co-existing depression, anxiety, or obsessive-compulsive symptoms.",
+      "Long-term psychotherapy to address underlying psychological issues, trauma, and identity development.",
+      "Support groups and peer-based programs that provide encouragement, reduce isolation, and share recovery strategies."
+    ]
+  },
+  {
+    "id": "bulimia_nervosa",
+    "title": "Bulimia Nervosa",
+    "description": "Bulimia Nervosa is an eating disorder characterized by recurrent episodes of binge eating, during which individuals consume large amounts of food in a short period, followed by compensatory behaviors such as self-induced vomiting, laxative abuse, fasting, or excessive exercise to prevent weight gain. Unlike anorexia, individuals with bulimia are often within or above a normal weight range, making it harder to detect. The condition can cause severe medical complications including gastrointestinal damage, electrolyte imbalances, heart arrhythmias, and tooth decay. It is also strongly associated with feelings of shame, guilt, and secrecy, which can worsen the disorder and delay treatment.",
+    "causes": [
+      "Genetic and biological predisposition, including abnormalities in brain chemicals related to hunger, impulse control, and reward processing.",
+      "Psychological factors such as impulsivity, difficulty regulating emotions, perfectionism, and chronic dissatisfaction with body image.",
+      "History of restrictive dieting, which often triggers binge eating due to biological and psychological deprivation.",
+      "Cultural and societal pressures emphasizing thinness, attractiveness, and dieting behaviors.",
+      "Traumatic experiences such as abuse, bullying, or neglect, which may contribute to emotional dysregulation and reliance on disordered eating as a coping mechanism.",
+      "Family dynamics, including critical attitudes about weight or appearance, high expectations, or conflict within the household."
+    ],
+    "treatments": [
+      "Cognitive-behavioral therapy for bulimia (CBT-BN), which focuses on breaking the binge-purge cycle and addressing distorted body image beliefs.",
+      "Nutritional counseling to establish structured eating patterns and restore a healthy relationship with food.",
+      "Pharmacotherapy, particularly selective serotonin reuptake inhibitors (SSRIs) such as fluoxetine, which can reduce binge-purge frequency.",
+      "Interpersonal therapy (IPT), which addresses underlying relationship difficulties, self-esteem issues, and social stressors.",
+      "Group therapy and support networks that reduce shame, provide accountability, and foster a sense of community in recovery.",
+      "Medical monitoring to treat complications such as dehydration, electrolyte imbalance, and esophageal damage.",
+      "Long-term psychotherapy to address trauma, emotional triggers, and relapse prevention."
+    ]
+  },
+  {
+    "id": "pica_disorder",
+    "title": "Pica Disorder",
+    "description": "Pica is an eating disorder that involves the persistent consumption of non-nutritive, non-food substances such as dirt, clay, chalk, paper, hair, soap, or metal. The behavior must persist for at least one month and be developmentally inappropriate, distinguishing it from normal exploratory eating in young children. Pica can lead to serious medical complications including poisoning, intestinal blockages, infections, and nutritional deficiencies. The condition is more common in children, pregnant individuals, and people with developmental or intellectual disabilities. It often occurs alongside other psychiatric conditions such as autism spectrum disorder or obsessive-compulsive disorder.",
+    "causes": [
+      "Nutritional deficiencies, particularly in iron or zinc, which may trigger cravings for non-food substances.",
+      "Developmental disorders such as autism spectrum disorder or intellectual disability, where repetitive and unusual eating behaviors may be present.",
+      "Psychiatric comorbidities including schizophrenia, obsessive-compulsive disorder, and intellectual disability.",
+      "Cultural practices or beliefs in which consumption of certain non-food items is normalized or ritualized.",
+      "Stressful or neglectful environments where children may develop pica as a coping mechanism or due to lack of supervision.",
+      "Pregnancy-related cravings or hormonal changes that can alter appetite and lead to unusual eating behaviors."
+    ],
+    "treatments": [
+      "Medical evaluation to identify and correct nutritional deficiencies such as iron or zinc supplementation.",
+      "Behavioral interventions including habit-reversal training and positive reinforcement to discourage ingestion of harmful items.",
+      "Environmental modifications to reduce access to substances commonly ingested and increase safe alternatives.",
+      "Psychotherapy to address underlying psychological conditions, trauma, or compulsive behaviors.",
+      "Parental training and education for children with pica, focusing on supervision and structured eating routines.",
+      "Treatment of co-occurring psychiatric disorders such as OCD or autism spectrum disorder with therapy and medications.",
+      "Long-term monitoring for medical complications such as poisoning, dental damage, or gastrointestinal obstructions."
+    ]
+  },
+  {
+    "id": "anorexia_binge_purge_type",
+    "title": "Anorexia Nervosa – Binge/Purge Type",
+    "description": "This subtype of Anorexia Nervosa is characterized by restrictive eating accompanied by episodes of binge eating or purging behaviors, such as self-induced vomiting, misuse of laxatives, diuretics, or enemas. Individuals still meet the criteria for anorexia, including being significantly underweight, but unlike the restricting type, they engage in compensatory behaviors to control weight. The condition leads to severe medical complications including electrolyte imbalances, gastrointestinal damage, cardiovascular strain, and even death if untreated. Psychologically, it is often associated with intense shame, guilt, and secrecy, which may delay diagnosis and treatment.",
+    "causes": [
+      "Genetic predisposition with heritable traits related to eating disorders and anxiety.",
+      "Neurochemical abnormalities involving serotonin and dopamine regulation that influence appetite, reward, and mood.",
+      "Societal and cultural emphasis on thinness and dieting, reinforced through social media and peer comparisons.",
+      "Psychological vulnerabilities including perfectionism, obsessive tendencies, impulsivity, and emotional dysregulation.",
+      "Stressful experiences such as trauma, bullying, or family conflict, which may trigger disordered eating behaviors.",
+      "Co-occurring mental health disorders such as depression, generalized anxiety, and obsessive-compulsive disorder."
+    ],
+    "treatments": [
+      "Nutritional rehabilitation and structured meal support under medical supervision.",
+      "Cognitive-behavioral therapy (CBT) focusing on breaking the binge-purge cycle and restructuring distorted body image thoughts.",
+      "Dialectical behavior therapy (DBT) for emotional regulation and impulse control.",
+      "Family-based therapy (FBT) to strengthen support systems, particularly in adolescents.",
+      "Pharmacotherapy with SSRIs or atypical antipsychotics to address co-occurring mood or obsessive symptoms.",
+      "Medical stabilization in cases of severe malnutrition, dehydration, or dangerous electrolyte disturbances.",
+      "Long-term aftercare programs, relapse prevention strategies, and peer support networks."
+    ]
+  },
+  {
+    "id": "binge_eating_disorder",
+    "title": "Binge Eating Disorder",
+    "description": "Binge Eating Disorder is characterized by recurrent episodes of consuming unusually large amounts of food in a short period, accompanied by a feeling of loss of control. Unlike bulimia nervosa, binge eating disorder does not involve regular compensatory behaviors such as purging. Episodes are often followed by guilt, shame, or distress, and the condition is strongly associated with obesity, metabolic syndrome, and other health complications. It is the most common eating disorder in the United States and can significantly impair self-esteem, relationships, and daily functioning.",
+    "causes": [
+      "Genetic and biological predisposition, including abnormalities in brain reward circuits related to dopamine and serotonin.",
+      "Emotional factors such as difficulty coping with stress, sadness, boredom, or loneliness, leading to emotional eating.",
+      "History of restrictive dieting or yo-yo dieting that increases vulnerability to binge episodes.",
+      "Cultural and social influences including exposure to diet culture, body dissatisfaction, and weight stigma.",
+      "Family history of eating disorders, obesity, or mood disorders.",
+      "Co-occurring mental health conditions including depression, generalized anxiety disorder, and substance use disorders."
+    ],
+    "treatments": [
+      "Cognitive-behavioral therapy (CBT) targeting binge triggers, food-related guilt, and self-esteem issues.",
+      "Interpersonal therapy (IPT) focusing on relationship stressors and interpersonal difficulties that contribute to disordered eating.",
+      "Pharmacological treatments including lisdexamfetamine (approved for BED), antidepressants, and anticonvulsants to reduce binge frequency.",
+      "Nutritional counseling to establish regular eating patterns and promote healthy weight management.",
+      "Group therapy and peer support networks to reduce shame and encourage accountability.",
+      "Mindfulness-based therapies and stress reduction techniques to improve awareness of hunger and satiety cues.",
+      "Medical monitoring for weight-related complications such as diabetes, hypertension, and sleep apnea."
+    ]
+  },
+  {
+    "id": "rumination_disorder",
+    "title": "Rumination Disorder",
+    "description": "Rumination Disorder is an eating disorder in which individuals repeatedly regurgitate food after eating, re-chew it, re-swallow it, or spit it out. Unlike vomiting in bulimia, rumination is not associated with an intention to lose weight. The behavior must persist for at least one month and is not better explained by another medical condition. Rumination disorder may occur in infants, children, and adults, and it can result in malnutrition, weight loss, dental problems, and social difficulties due to embarrassment.",
+    "causes": [
+      "Developmental disorders such as intellectual disability or autism spectrum disorder.",
+      "Behavioral reinforcement, where regurgitation becomes a learned pattern that reduces discomfort or provides sensory stimulation.",
+      "Emotional distress, stress, or neglect during early development, which may increase risk.",
+      "Medical conditions such as gastroesophageal reflux disease (GERD) that may initially trigger regurgitation behaviors.",
+      "Lack of environmental stimulation or parental responsiveness in infants and young children."
+    ],
+    "treatments": [
+      "Behavioral therapy techniques including habit-reversal training, diaphragmatic breathing, and positive reinforcement to reduce regurgitation.",
+      "Parental training and caregiver involvement for children with rumination disorder to encourage structured feeding practices.",
+      "Medical evaluation and treatment of any underlying gastrointestinal conditions.",
+      "Nutritional rehabilitation for individuals experiencing malnutrition or weight loss.",
+      "Psychotherapy for older children and adults to address stress, anxiety, or compulsive features.",
+      "Environmental enrichment and increased caregiver interaction for infants and children in neglectful settings."
+    ]
+  },
+  {
+    "id": "avoidant_restrictive_food_intake_disorder",
+    "title": "Avoidant/Restrictive Food Intake Disorder (ARFID)",
+    "description": "ARFID is an eating disorder characterized by avoidance or restriction of food intake without the body image concerns typically seen in anorexia or bulimia. Individuals with ARFID may limit food due to sensory sensitivities, fear of choking, or lack of interest in eating. The condition leads to nutritional deficiencies, weight loss, growth delays in children, and impairment in social or daily functioning. Unlike picky eating, ARFID is severe enough to cause health risks and significant distress.",
+    "causes": [
+      "Sensory processing differences where textures, smells, or tastes of certain foods are overwhelming or aversive.",
+      "Traumatic experiences involving choking, vomiting, or allergic reactions that create fear-based avoidance of food.",
+      "Developmental conditions such as autism spectrum disorder, ADHD, or anxiety disorders, which increase vulnerability.",
+      "Family history of anxiety or eating difficulties.",
+      "Environmental reinforcement, where avoidance is unintentionally supported by caregivers accommodating restrictive preferences."
+    ],
+    "treatments": [
+      "Nutritional counseling and medical monitoring to address deficiencies and restore growth trajectories in children.",
+      "Cognitive-behavioral therapy for ARFID (CBT-AR), which focuses on gradual exposure to feared or avoided foods.",
+      "Family-based therapy (FBT) to empower caregivers in supporting children’s healthy eating habits.",
+      "Occupational therapy for sensory integration and desensitization to food textures.",
+      "Medication management for co-occurring anxiety or ADHD that may exacerbate food avoidance.",
+      "Group therapy and peer modeling to reduce avoidance behaviors and normalize eating patterns."
+    ]
+  },
+  {
+    "id": "orthorexia_nervosa",
+    "title": "Orthorexia Nervosa",
+    "description": "Orthorexia Nervosa is a proposed eating disorder, not yet officially recognized in diagnostic manuals, characterized by an obsession with healthy or 'pure' eating. Individuals with orthorexia may restrict foods they consider unhealthy, leading to rigid dietary rules, anxiety about eating, and nutritional deficiencies. Unlike anorexia, the focus is not always on weight loss but rather on food quality and purity. Over time, orthorexia can interfere with social relationships, daily functioning, and overall well-being.",
+    "causes": [
+      "Personality traits such as perfectionism, rigidity, and obsessive tendencies.",
+      "Cultural influences emphasizing clean eating, detox diets, and wellness trends.",
+      "Exposure to misinformation about nutrition through social media or unverified health sources.",
+      "Psychological factors such as anxiety, need for control, and fear of illness or contamination.",
+      "History of dieting or eating disorders, which may evolve into obsessive healthy eating patterns.",
+      "Co-occurring conditions such as OCD, anxiety disorders, or health-related phobias."
+    ],
+    "treatments": [
+      "Psychotherapy, particularly cognitive-behavioral therapy (CBT), to challenge rigid dietary rules and obsessive thoughts.",
+      "Nutritional counseling to reintroduce restricted foods and restore dietary balance.",
+      "Mindfulness-based interventions to reduce anxiety and promote flexible eating habits.",
+      "Psychoeducation about balanced nutrition and the dangers of extreme dietary restrictions.",
+      "Support groups for individuals recovering from eating disorders and disordered eating patterns.",
+      "Medication management if co-occurring anxiety, OCD, or depression is present."
+    ]
+  }
+]
