@@ -1,35 +1,35 @@
-import { Facebook, Info, Heart } from "lucide-svelte";
+import { Facebook, Info, Heart, Home, Hash, Smile, Calendar, Notebook, Settings } from "lucide-svelte";
 import type { RouteInterface } from "./route.interface";
 
 export const MainRoute: RouteInterface[] = [
   {
     name: "Home",
-    path: "/main/Home", 
-    icon: Facebook
+    path: "/main/Therapists/Home", 
+    icon: Home
   },
   {
-    name: "About",
-    path: "/main/Dashboard",
-    icon: Info
+    name: "Dashboard",
+    path: "/main/Therapists/Dashboard",
+    icon: Hash
   },
   {
-    name: "About",
-    path: "/main/Clients",
-    icon: Info
+    name: "Clients",
+    path: "/main/Therapists/Clients",
+    icon: Smile
   },
   {
-    name: "Donate",
-    path: "/main/Calendar",
-    icon: Heart
+    name: "Calendar",
+    path: "/main/Therapists/Calendar",
+    icon: Calendar
   },
   {
-    name: "Donate",
-    path: "/main/Notes",
-    icon: Heart
+    name: "Notes",
+    path: "/main/Therapists/notes",
+    icon: Notebook
   },
   {
-    name: "Donate",
-    path: "/main/Settings",
-    icon: Heart
+    name: "Settings",
+    path: "/main/Therapists/Settings",
+    icon: Settings
   },
 ];

@@ -4,18 +4,18 @@ import type { HomeRouteInterface } from "./home.interface";
 
 export const HomeRoute: HomeRouteInterface[] = [
   {
-    name: "Home",
-    path: "/main/Home/LofiZone", 
+    name: "Lofi Zone",
+    path: "/main/Therapists/Home/LofiZone", 
     icon: Music2
   },
   {
-    name: "About",
-    path: "/main/Home/Treatments",
+    name: "Treatments",
+    path: "/main/Therapists/Home/Treatments",
     icon: HandHeart
   },
   {
-    name: "Donate",
-    path: "/main/Home/Therapists",
+    name: "Therapists",
+    path: "/main/Therapists/Home/Therapists",
     icon: Users
   }
 ];
