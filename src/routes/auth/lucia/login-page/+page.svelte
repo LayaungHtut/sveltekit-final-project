@@ -1,118 +1,55 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 	import type { ActionData } from './$types';
 	import { goto } from '$app/navigation';
 
 	let { form }: { form: ActionData } = $props();
 </script>
 
+<main class="min-h-screen flex items-center justify-center bg-base-200">
+	<div class="card w-full max-w-md shadow-xl bg-base-100">
+		<div class="card-body">
+			<h1 class="text-2xl font-bold text-center text-primary">Welcome Back 👋</h1>
+			<p class="text-sm text-center text-gray-500 mb-4">Login to continue</p>
 
-<div class="page-container">
-	<form method="post" action="?/login" use:enhance>
-		<label class="input validator">
-			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-				<g
-					stroke-linejoin="round"
-					stroke-linecap="round"
-					stroke-width="2.5"
-					fill="none"
-					stroke="currentColor"
-				>
-					<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-					<circle cx="12" cy="7" r="4"></circle>
-				</g>
-			</svg>
-			<input name="username" />
-		</label>
+			<form method="post" action="?/login"  class="space-y-4">
+				<!-- Username -->
+				<label class="input input-bordered flex items-center gap-2">
+					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A9 9 0 1119.07 3.87M12 7v.01M12 12v.01M12 17h.01" />
+					</svg>
+					<input type="text" name="username" placeholder="Username" class="grow" required />
+				</label>
 
-		<label class="input validator">
-			<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-				<g
-					stroke-linejoin="round"
-					stroke-linecap="round"
-					stroke-width="2.5"
-					fill="none"
-					stroke="currentColor"
-				>
-					<path
-						d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
-					></path>
-					<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
-				</g>
-			</svg>
-			<input type="password" name="password" />
-		</label>
+				<!-- Password -->
+				<label class="input input-bordered flex items-center gap-2">
+					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.338 0 .675.034 1 .1a3.001 3.001 0 015.9.9v2.6a3.001 3.001 0 01-5.9.9A5.978 5.978 0 0112 16a5.978 5.978 0 01-1-.1 3.001 3.001 0 01-5.9-.9v-2.6a3.001 3.001 0 015.9-.9c.325-.066.662-.1 1-.1z" />
+					</svg>
+					<input type="password" name="password" placeholder="Password" class="grow" required />
+				</label>
 
-		<button type="button" class="link-button" onclick={() => goto('/auth/lucia/forgotpassword-page')}>
-			Forgot Password?
-		</button>
-		<p style="color: red">{form?.message ?? ''}</p>
-		<button>Login</button>
-		<button onclick={() => goto('/auth/lucia/signup-page')}>Register</button>
-	</form>
-</div>
+				<!-- Forgot password -->
+				<div class="flex justify-end">
+					<button type="button" class="link link-primary text-sm"
+						onclick={() => goto('/auth/lucia/forgotpassword-page')}>
+						Forgot password?
+					</button>
+				</div>
 
-<style>
-	.page-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		background: linear-gradient(to right, #e0eafc, #cfdef3);
-		padding: 20px;
+				<!-- Error message -->
+				{#if form?.message}
+					<p class="text-error text-center text-sm">{form.message}</p>
+				{/if}
 
-		& form {
-			background-color: #ffffff;
-			border-radius: 12px;
-			box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-			padding: 40px 30px;
-			max-width: 400px;
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			animation: fadeIn 0.5s ease-in-out;
-
-			& p {
-				text-align: center;
-				color: #e74c3c;
-				font-size: 14px;
-				margin-top: 10px;
-			}
-
-			& button {
-				padding: 12px;
-				border: none;
-				border-radius: 6px;
-				background-color: #5a9df0;
-				color: white;
-				font-size: 15px;
-				cursor: pointer;
-				transition: background-color 0.3s ease;
-
-				&:hover {
-					background-color: #3a8fd4;
-				}
-			}
-		}
-	}
-
-	button + button {
-		background-color: #6c63ff;
-
-		&:hover {
-			background-color: #5848d9;
-		}
-	}
-
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-</style>
+				<!-- Actions -->
+				<div class="form-control mt-4 space-y-2">
+					<button type="submit" class="btn btn-primary w-full">Login</button>
+					<button type="button" class="btn btn-outline w-full"
+						onclick={() => goto('/auth/lucia/signup-page')}>
+						Register
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</main>

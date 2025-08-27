@@ -26,168 +26,58 @@
 		}
 	};
 </script>
+<main class="min-h-screen flex items-center justify-center bg-base-200">
+	<div class="card w-full max-w-md shadow-xl bg-base-100">
+		<div class="card-body">
+			<h2 class="text-2xl font-bold text-center text-primary">Create an Account</h2>
+			<p class="text-sm text-center text-gray-500 mb-4">Join us and get started</p>
 
+			<form onsubmit={handleSubmit} class="space-y-4">
+				<!-- Email -->
+				<label class="input input-bordered flex items-center gap-2">
+					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0l-8-4m0 0l8 4m-8-4v8m8-8v8" />
+					</svg>
+					<input type="email" name="email" placeholder="Email" bind:value={email} required class="grow" />
+				</label>
 
-<div class="form-container">
-	<form onsubmit={handleSubmit}>
-		<h2>Create an Account</h2>
+				<!-- Username -->
+				<label class="input input-bordered flex items-center gap-2">
+					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4a4 4 0 110 8 4 4 0 010-8zM6 20a6 6 0 1112 0H6z" />
+					</svg>
+					<input type="text" name="username" placeholder="Username" bind:value={username} required class="grow" />
+				</label>
 
-		<div class="input-group">
-			<label class="input validator">
-				<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<g
-						stroke-linejoin="round"
-						stroke-linecap="round"
-						stroke-width="2.5"
-						fill="none"
-						stroke="currentColor"
-					>
-						<rect width="20" height="16" x="2" y="4" rx="2"></rect>
-						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-					</g>
-				</svg>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					bind:value={email}
-					placeholder="Enter your email"
-					required
-				/>
-			</label>
-			<div class="validator-hint hidden">Enter valid email address</div>
+				<!-- Role -->
+				<select name="role" required class="select select-bordered w-full">
+					<option disabled selected>Select Role</option>
+					<option value="client">Client</option>
+					<option value="therapist">Therapist</option>
+				</select>
 
-			<label class="input validator">
-				<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<g
-						stroke-linejoin="round"
-						stroke-linecap="round"
-						stroke-width="2.5"
-						fill="none"
-						stroke="currentColor"
-					>
-						<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-						<circle cx="12" cy="7" r="4"></circle>
-					</g>
-				</svg>
-				<input
-					type="text"
-					id="username"
-					name="username"
-					bind:value={username}
-					placeholder="Enter your username"
-					required
-				/>
-			</label>
+				<!-- Password -->
+				<label class="input input-bordered flex items-center gap-2">
+					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.338 0 .675.034 1 .1a3.001 3.001 0 015.9.9v2.6a3.001 3.001 0 01-5.9.9A5.978 5.978 0 0112 16a5.978 5.978 0 01-1-.1 3.001 3.001 0 01-5.9-.9v-2.6a3.001 3.001 0 015.9-.9c.325-.066.662-.1 1-.1z" />
+					</svg>
+					<input type="password" name="password" placeholder="Password" bind:value={password} required class="grow" />
+				</label>
 
-			{#if message && message.includes('username')}
-				<div class="error">{message}</div>
-			{/if}
+				<!-- Error message -->
+				{#if message}
+					<p class="text-error text-sm text-center">{message}</p>
+				{/if}
+
+				<!-- Actions -->
+				<div class="form-control mt-4 space-y-2">
+					<button type="submit" class="btn btn-primary w-full">Register</button>
+					<p class="text-center text-sm">
+						Already have an account?
+						<a href="/auth/lucia/login-page" class="link link-primary">Login here</a>
+					</p>
+				</div>
+			</form>
 		</div>
-
-		<div class="input-group">
-			<label class="input validator">
-				<svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<g
-						stroke-linejoin="round"
-						stroke-linecap="round"
-						stroke-width="2.5"
-						fill="none"
-						stroke="currentColor"
-					>
-						<path
-							d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
-						></path>
-						<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
-					</g>
-				</svg>
-				<input
-					type="password"
-					id="password"
-					name="password"
-					bind:value={password}
-					placeholder="Enter your password"
-					required
-				/>
-			</label>
-
-			{#if message && message.includes('password')}
-				<div class="error">{message}</div>
-			{/if}
-		</div>
-
-		<button type="submit">Register</button>
-
-		{#if message && !message.includes('username') && !message.includes('password')}
-			<div class="message">{message}</div>
-		{/if}
-
-		<p class="message">
-			Already have an account? <a href="/auth/lucia/login-page" class="link">Login here</a>
-		</p>
-	</form>
-</div>
-
-<style>
-	.form-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		background-color: #f0f2f5;
-
-		& form {
-			background: white;
-			padding: 30px;
-			border-radius: 8px;
-			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-			width: 100%;
-			max-width: 400px;
-
-			& h2 {
-				text-align: center;
-				margin-bottom: 20px;
-				font-size: 24px;
-				color: #333;
-			}
-
-			& .input-group {
-				margin-bottom: 15px;
-
-				& .error {
-					color: red;
-					font-size: 12px;
-					margin-top: 5px;
-				}
-			}
-
-			& button {
-				width: 100%;
-				padding: 12px;
-				background-color: #5a9df0;
-				color: white;
-				border: none;
-				border-radius: 4px;
-				font-size: 16px;
-				cursor: pointer;
-				transition: background-color 0.3s ease;
-
-				&:hover {
-					background-color: #3a8fd4;
-				}
-			}
-
-			& .message {
-				text-align: center;
-				margin-top: 10px;
-				font-size: 14px;
-				color: #e74c3c;
-			}
-
-			& .link {
-				color: #5a9df0;
-				text-decoration: none;
-			}
-		}
-	}
-</style>
+	</div>
+</main>

@@ -6,22 +6,19 @@ import { db } from '$lib/server/db';
 import * as table from '$lib/server/db/schema';
 import type { Actions, PageServerLoad } from './$types';
 import { eq } from 'drizzle-orm';
-
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		/* return redirect(302, '/auth/lucia'); */
-		return redirect(302, '/main');
+		/* return redirect(302, '/auth/lucia'); */ return redirect(302, '/main/Therapists');
 	}
 	return {};
 };
-
 export const actions: Actions = {
 	default: async (event) => {
 		const formData = await event.request.formData();
 		const username = formData.get('username');
 		const password = formData.get('password');
 		const email = formData.get('email');
-
+		const role = formData.get('role') as string;
 		if (!validateUsername(username)) {
 			return fail(400, { message: 'Invalid username' });
 		}
@@ -31,13 +28,20 @@ export const actions: Actions = {
 		if (!validateEmail(email)) {
 			return fail(400, { message: 'Invalid email' });
 		}
-
 		const existing = await db
 			.select()
 			.from(table.user)
 			.where(eq(table.user.email, email as string));
 		if (existing.length > 0) {
 			return fail(400, { message: 'Email already in use' });
+		}
+		const existingUser = await db
+			.select()
+			.from(table.user)
+			.where(eq(table.user.username, username as string));
+
+		if (existingUser.length > 0) {
+			return fail(400, { message: 'Username already in use' });
 		}
 
 		const userId = generateUserId();
@@ -47,41 +51,34 @@ export const actions: Actions = {
 			outputLen: 32,
 			parallelism: 1
 		});
-
 		try {
 			await db.insert(table.user).values({
 				id: userId,
 				username: username as string,
 				email: email as string,
-				passwordHash
+				passwordHash,
+				role
 			});
-
 			const sessionToken = auth.generateSessionToken();
 			const session = await auth.createSession(sessionToken, userId);
 			auth.setSessionTokenCookie(event, sessionToken, session.expiresAt);
 		} catch (e) {
 			console.error(e);
-			return fail(500, { message: 'Email already in used' });
+			return fail(500, { message: 'Username or Email already in used' });
 		}
-
-		/* return redirect(302, '/auth/lucia'); */
-		return redirect(302, '/main');
+		/* return redirect(302, '/auth/lucia'); */ return redirect(302, '/main');
 	}
 };
-
 function generateUserId() {
 	const bytes = crypto.getRandomValues(new Uint8Array(15));
 	return encodeBase32LowerCase(bytes);
 }
-
 function validateUsername(username: unknown): username is string {
 	return typeof username === 'string' && /^[a-z0-9_-]{3,31}$/.test(username);
 }
-
 function validatePassword(password: unknown): password is string {
 	return typeof password === 'string' && password.length >= 6 && password.length <= 255;
 }
-
 function validateEmail(email: unknown): email is string {
 	return typeof email === 'string' && /\S+@\S+\.\S+/.test(email);
 }

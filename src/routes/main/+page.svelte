@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
 	import { Menu, Moon, Search, Sun } from "lucide-svelte";
+	import type { PageServerData } from "./$types"; 
+
+
+	let { data } : { data: PageServerData } = $props();
 
 </script>
  
@@ -137,6 +141,7 @@
 					</div>
 					<div class="card w-full max-w-sm shrink-0 bg-[#60885E] text-black shadow-2xl">
 						<div class="card-body">
+							{#if data.user}
 							<fieldset class="fieldset">
 								<label class="label" for="email">Email</label>
 								<input type="email" id="email" class="input" placeholder="Email" />
@@ -145,6 +150,9 @@
 								<div><a href="/" class="link link-hover">Forgot password?</a></div>
 								<button class="btn btn-neutral mt-4">Login</button>
 							</fieldset>
+							{:else}
+							not add
+							{/if}
 						</div>
 					</div>
 				</div>

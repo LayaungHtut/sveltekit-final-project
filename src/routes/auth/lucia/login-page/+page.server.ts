@@ -10,7 +10,7 @@ import type { Actions, PageServerLoad } from './$types';
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
 		/*return redirect(302, '/auth/lucia');*/
-		return redirect(302, '/main');
+		return redirect(302, '/main/Therapists');
 	}
 	return {};
 };
@@ -51,49 +51,11 @@ export const actions: Actions = {
 		const session = await auth.createSession(sessionToken, existingUser.id);
 		auth.setSessionTokenCookie(event, sessionToken, session.expiresAt);
 
-		return redirect(302, '/calculator');
-	},
-	register: async (event) => {
-		const formData = await event.request.formData();
-		const username = formData.get('username');
-		const password = formData.get('password');
-
-		if (!validateUsername(username)) {
-			return fail(400, { message: 'Invalid username' });
-		}
-		if (!validatePassword(password)) {
-			return fail(400, { message: 'Invalid password' });
-		}
-
-		const userId = generateUserId();
-		const passwordHash = await hash(password, {
-			memoryCost: 19456,
-			timeCost: 2,
-			outputLen: 32,
-			parallelism: 1
-		});
-
-		try {
-			await db
-				.insert(table.user)
-				.values({ id: userId, username, passwordHash, email: `${username}@example.com` });
-
-			const sessionToken = auth.generateSessionToken();
-			const session = await auth.createSession(sessionToken, userId);
-			auth.setSessionTokenCookie(event, sessionToken, session.expiresAt);
-		} catch (e) {
-			return fail(500, { message: 'An error has occurred' });
-		}
-		/* return redirect(302, '/auth/lucia'); */
 		return redirect(302, '/main');
-	}
+	},
+	
 };
 
-function generateUserId() {
-	const bytes = crypto.getRandomValues(new Uint8Array(15));
-	const id = encodeBase32LowerCase(bytes);
-	return id;
-}
 
 function validateUsername(username: unknown): username is string {
 	return (
