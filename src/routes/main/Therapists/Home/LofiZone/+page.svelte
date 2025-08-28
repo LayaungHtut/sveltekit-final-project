@@ -57,9 +57,8 @@
 		if (audio) audio.volume = volume;
 	}
 
-	function changeMood(mood: string, bg: string) {
+	function changeMood(mood: string) {
 		currentMood = mood;
-		document.body.style.background = bg;
 	}
 
 	const quoteInterval = setInterval(() => {
@@ -99,7 +98,7 @@
 
 		<div class="moods">
 			{#each moods as mood}
-				<button onclick={() => changeMood(mood.name, mood.bg)}>{mood.name}</button>
+				<button onclick={() => changeMood(mood.name)}>{mood.name}</button>
 			{/each}
 		</div>
 	</div>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { ActionData } from './$types';
 	import { goto } from '$app/navigation';
+	import { KeyIcon, UserIcon } from 'lucide-svelte';
 
 	let { form }: { form: ActionData } = $props();
 </script>
@@ -13,18 +14,14 @@
 
 			<form method="post" action="?/login"  class="space-y-4">
 				<!-- Username -->
-				<label class="input input-bordered flex items-center gap-2">
-					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A9 9 0 1119.07 3.87M12 7v.01M12 12v.01M12 17h.01" />
-					</svg>
+				<label class="input input-bordered w-full flex items-center gap-2">
+						<UserIcon />
 					<input type="text" name="username" placeholder="Username" class="grow" required />
 				</label>
 
 				<!-- Password -->
-				<label class="input input-bordered flex items-center gap-2">
-					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.338 0 .675.034 1 .1a3.001 3.001 0 015.9.9v2.6a3.001 3.001 0 01-5.9.9A5.978 5.978 0 0112 16a5.978 5.978 0 01-1-.1 3.001 3.001 0 01-5.9-.9v-2.6a3.001 3.001 0 015.9-.9c.325-.066.662-.1 1-.1z" />
-					</svg>
+				<label class="input input-bordered w-full flex items-center gap-2">
+					<KeyIcon />
 					<input type="password" name="password" placeholder="Password" class="grow" required />
 				</label>
 

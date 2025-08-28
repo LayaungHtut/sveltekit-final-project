@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Key, Mail, User } from "lucide-svelte";
+
 	let username = $state('');
 	let password = $state('');
 	let email = $state('');
@@ -34,18 +36,14 @@
 
 			<form onsubmit={handleSubmit} class="space-y-4">
 				<!-- Email -->
-				<label class="input input-bordered flex items-center gap-2">
-					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0l-8-4m0 0l8 4m-8-4v8m8-8v8" />
-					</svg>
+				<label class="input w-full input-bordered flex items-center gap-2">
+					<Mail />
 					<input type="email" name="email" placeholder="Email" bind:value={email} required class="grow" />
 				</label>
 
 				<!-- Username -->
-				<label class="input input-bordered flex items-center gap-2">
-					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4a4 4 0 110 8 4 4 0 010-8zM6 20a6 6 0 1112 0H6z" />
-					</svg>
+				<label class="input w-full input-bordered flex items-center gap-2">
+					<User />
 					<input type="text" name="username" placeholder="Username" bind:value={username} required class="grow" />
 				</label>
 
@@ -57,10 +55,8 @@
 				</select>
 
 				<!-- Password -->
-				<label class="input input-bordered flex items-center gap-2">
-					<svg class="h-5 w-5 opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c.338 0 .675.034 1 .1a3.001 3.001 0 015.9.9v2.6a3.001 3.001 0 01-5.9.9A5.978 5.978 0 0112 16a5.978 5.978 0 01-1-.1 3.001 3.001 0 01-5.9-.9v-2.6a3.001 3.001 0 015.9-.9c.325-.066.662-.1 1-.1z" />
-					</svg>
+				<label class="input input-bordered  w-full flex items-center gap-2">
+					<Key />
 					<input type="password" name="password" placeholder="Password" bind:value={password} required class="grow" />
 				</label>
 
