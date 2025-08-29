@@ -78,9 +78,9 @@
 		>
 			<div>
 				<div class="avatar mb-4 flex justify-center">
-					<div class="ring-primary ring-offset-base-100 w-20 rounded-full ring ring-offset-1">
+					<!-- <div class="ring-primary ring-offset-base-100 w-20 rounded-full ring ring-offset-1">
 						 {data.user.username.charAt(0).toUpperCase()}
-					</div>
+					</div> -->
 				</div>
 				<h1 class="mb-2 text-center text-xl font-bold">{data.user.username}</h1>
 				<h2 class="mb-5 text-center text-xs">{data.user.email}</h2>
