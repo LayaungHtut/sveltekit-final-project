@@ -1,0 +1,1349 @@
+[
+	{
+		"id": "stoicism",
+		"name": "Stoicism",
+		"description": "A philosophy of personal ethics informed by its system of logic and its views on the natural world. It teaches the development of self-control and fortitude as a means to overcome destructive emotions.",
+		"category": "Philosophy",
+		"key_ideas": [
+			"Virtue is the highest good",
+			"Control over one's emotions and reactions",
+			"Focus on what you can control"
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Meditations by Marcus Aurelius",
+				"url": "https://en.wikipedia.org/wiki/Meditations"
+			},
+			{
+				"type": "video",
+				"title": "The Stoic Philosophy",
+				"url": "https://www.youtube.com/watch?v=xS7XZK1eNJ8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["self-control", "virtue", "emotion"]
+	},
+	{
+		"id": "freud_psychology",
+		"name": "Freud's Psychoanalysis",
+		"description": "A theory of mind and therapeutic method that aims to uncover the unconscious motives and drives that influence human behavior. Freud is known for his theories on the unconscious, repression, and the role of sexuality in development.",
+		"category": "Psychology",
+		"key_ideas": ["Unconscious mind", "Id, ego, and superego", "Repression", "Dream analysis"],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Interpretation of Dreams by Sigmund Freud",
+				"url": "https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams"
+			},
+			{
+				"type": "video",
+				"title": "Introduction to Freud's Psychoanalysis",
+				"url": "https://www.youtube.com/watch?v=H0l1_BqjmFw"
+			}
+		],
+		"date_added": "2025-08-25",
+		"tags": ["unconscious", "psychoanalysis", "dreams"]
+	},
+	{
+		"id": "cognitive_bias",
+		"name": "Cognitive Bias",
+		"description": "A systematic pattern of deviation from norm or rationality in judgment, whereby inferences about other people and situations may be drawn in an illogical fashion.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Confirmation bias",
+			"Anchoring bias",
+			"Availability heuristic",
+			"Framing effect"
+		],
+		"resources": [
+			{
+				"type": "article",
+				"title": "The Psychology of Cognitive Bias",
+				"url": "https://www.psychologytoday.com/us/basics/cognitive-bias"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Biases Explained",
+				"url": "https://www.youtube.com/watch?v=kh9nlA9-1LM"
+			}
+		],
+		"date_added": "2025-08-20",
+		"tags": ["bias", "decision-making", "cognition"]
+	},
+	{
+		"id": "existentialism",
+		"name": "Existentialism",
+		"description": "A philosophical movement that emphasizes individual freedom, choice, and responsibility. It explores the meaning of life and the human condition in an indifferent or absurd universe.",
+		"category": "Philosophy",
+		"key_ideas": [
+			"Existence precedes essence: Humans are not born with a predetermined purpose; they create their own meaning and identity through choices and actions.",
+			"Freedom and responsibility: Every individual has the freedom to make decisions, but with this freedom comes full responsibility for the consequences.",
+			"Absurdity of life: Life has no inherent meaning, and attempts to find absolute meaning often clash with the chaotic and indifferent universe.",
+			"Authenticity: One should live genuinely according to personal values rather than conforming blindly to societal expectations or external pressures."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Being and Nothingness by Jean-Paul Sartre",
+				"url": "https://en.wikipedia.org/wiki/Being_and_Nothingness"
+			},
+			{
+				"type": "video",
+				"title": "Introduction to Existentialism",
+				"url": "https://www.youtube.com/watch?v=8Wtn7t3D92E"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["freedom", "responsibility", "meaning"]
+	},
+	{
+		"id": "behavioral_economics",
+		"name": "Behavioral Economics",
+		"description": "A field combining economics and psychology to study how cognitive biases and emotions affect economic decision-making.",
+		"category": "Economics",
+		"key_ideas": [
+			"Loss aversion: People tend to strongly prefer avoiding losses over acquiring equivalent gains, which can lead to irrational financial choices.",
+			"Prospect theory: Individuals evaluate potential gains and losses relative to a reference point, rather than absolute outcomes, often making risk-averse or risk-seeking decisions inconsistently.",
+			"Mental accounting: People categorize money into separate accounts mentally, treating funds differently based on arbitrary labels, which can distort rational decision-making.",
+			"Nudging behavior: Subtle changes in the way choices are presented can influence decisions without restricting freedom, guiding people toward better outcomes."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Nudge by Richard Thaler and Cass Sunstein",
+				"url": "https://en.wikipedia.org/wiki/Nudge_(book)"
+			},
+			{
+				"type": "video",
+				"title": "Behavioral Economics Explained",
+				"url": "https://www.youtube.com/watch?v=5zXPr6Gb63M"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["decision-making", "psychology", "economics"]
+	},
+	{
+		"id": "jung_analytical_psychology",
+		"name": "Jung's Analytical Psychology",
+		"description": "A theory of psychology emphasizing the collective unconscious, archetypes, and individuation as a path toward psychological wholeness.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Collective unconscious: Beyond personal experiences, humans share universal unconscious elements that influence behavior and thought patterns.",
+			"Archetypes: Recurring symbolic figures or themes, such as the Hero or the Shadow, appear in myths, dreams, and cultural narratives, reflecting the structure of the collective unconscious.",
+			"Individuation: A lifelong process of integrating different parts of the psyche, including conscious and unconscious aspects, to achieve personal wholeness.",
+			"Shadow self: The parts of personality that are hidden or denied, often containing repressed desires and traits, which must be acknowledged to achieve psychological growth."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Man and His Symbols by Carl Jung",
+				"url": "https://en.wikipedia.org/wiki/Man_and_His_Symbols"
+			},
+			{
+				"type": "video",
+				"title": "Carl Jung: Analytical Psychology",
+				"url": "https://www.youtube.com/watch?v=5egWlWvgXx8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["archetypes", "unconscious", "psychology"]
+	},
+	{
+		"id": "minimalism",
+		"name": "Minimalism",
+		"description": "A lifestyle and philosophy focused on simplicity, intentionality, and removing excess material and mental clutter.",
+		"category": "Lifestyle",
+		"key_ideas": [
+			"Simplicity: Reducing possessions and commitments to focus on what truly adds value to life, eliminating unnecessary distractions.",
+			"Intentional living: Making conscious choices about how to spend time, energy, and resources to align with personal priorities and values.",
+			"Decluttering: Actively removing physical and mental clutter to create a sense of clarity, calm, and freedom in daily life.",
+			"Focus on experiences over things: Prioritizing meaningful experiences, relationships, and personal growth rather than material accumulation."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Minimalists: Essential by Joshua Fields Millburn & Ryan Nicodemus",
+				"url": "https://en.wikipedia.org/wiki/The_Minimalists"
+			},
+			{
+				"type": "video",
+				"title": "Minimalism Lifestyle Explained",
+				"url": "https://www.youtube.com/watch?v=0Co1Iptd4p4"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["simplicity", "intentionality", "decluttering"]
+	},
+	{
+		"id": "utilitarianism",
+		"name": "Utilitarianism",
+		"description": "A moral philosophy that evaluates actions based on their consequences, aiming to maximize overall happiness and minimize suffering.",
+		"category": "Philosophy",
+		"key_ideas": [
+			"Greatest happiness principle: The moral worth of an action is determined by its ability to produce the greatest happiness for the greatest number of people.",
+			"Consequentialism: Ethical decisions should be judged primarily by their outcomes rather than intentions or rules.",
+			"Impartiality: Every individual's happiness counts equally, meaning personal bias should not influence ethical choices.",
+			"Practical application: Utilitarianism can guide public policy, healthcare, and economic decisions by prioritizing benefits over harms."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Utilitarianism by John Stuart Mill",
+				"url": "https://en.wikipedia.org/wiki/Utilitarianism"
+			},
+			{
+				"type": "video",
+				"title": "Understanding Utilitarianism",
+				"url": "https://www.youtube.com/watch?v=va7V4ZfxbTg"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["ethics", "consequences", "happiness"]
+	},
+	{
+		"id": "cognitive_dissonance",
+		"name": "Cognitive Dissonance",
+		"description": "A psychological phenomenon where a person experiences discomfort from holding conflicting beliefs, values, or attitudes, often leading to rationalization or attitude change.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Internal conflict: Experiencing tension when actions contradict beliefs or values, creating psychological discomfort that motivates change.",
+			"Rationalization: People often adjust their beliefs, attitudes, or behaviors to reduce the discomfort caused by dissonance.",
+			"Selective perception: Individuals may ignore or reinterpret information that conflicts with their existing views to maintain mental consistency.",
+			"Behavioral consequences: Cognitive dissonance can influence decision-making, persuasion, and habit formation, shaping long-term behavior patterns."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "A Theory of Cognitive Dissonance by Leon Festinger",
+				"url": "https://en.wikipedia.org/wiki/Cognitive_dissonance"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Dissonance Explained",
+				"url": "https://www.youtube.com/watch?v=9Z7k0QZ4FNs"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "beliefs", "behavior"]
+	},
+	{
+		"id": "flow_state",
+		"name": "Flow State",
+		"description": "A mental state of deep focus, immersion, and enjoyment in an activity, often leading to peak performance and creativity.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Total immersion: Being fully absorbed in a task, losing track of time and self-consciousness while performing at one’s best.",
+			"Balance of challenge and skill: Flow occurs when the difficulty of an activity matches an individual’s abilities, creating engagement without anxiety or boredom.",
+			"Intrinsic motivation: Activities that induce flow are usually rewarding in themselves, independent of external rewards.",
+			"Enhanced creativity and performance: Entering flow can improve problem-solving, learning, and overall productivity, fostering peak experiences."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi",
+				"url": "https://en.wikipedia.org/wiki/Flow_(psychology)"
+			},
+			{
+				"type": "video",
+				"title": "Understanding Flow State",
+				"url": "https://www.youtube.com/watch?v=2gXG8nE1xhA"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["focus", "creativity", "psychology"]
+	},
+	{
+		"id": "epistemology",
+		"name": "Epistemology",
+		"description": "The study of knowledge, its nature, sources, limits, and justification, asking how we know what we know.",
+		"category": "Philosophy",
+		"key_ideas": [
+			"Nature of knowledge: Understanding what qualifies as knowledge versus mere belief or opinion.",
+			"Sources of knowledge: Examining perception, reasoning, memory, and testimony as ways humans acquire knowledge.",
+			"Justification: Evaluating when a belief is sufficiently supported by evidence or reasoning to count as knowledge.",
+			"Limits of knowledge: Exploring the boundaries of human understanding, skepticism, and the possibility of certainty."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "An Enquiry Concerning Human Understanding by David Hume",
+				"url": "https://en.wikipedia.org/wiki/An_Enquiry_Concerning_Human_Understanding"
+			},
+			{
+				"type": "video",
+				"title": "Epistemology Explained",
+				"url": "https://www.youtube.com/watch?v=Ak5X9nGmykI"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["knowledge", "philosophy", "skepticism"]
+	},
+	{
+		"id": "self_determination_theory",
+		"name": "Self-Determination Theory",
+		"description": "A theory of motivation emphasizing intrinsic motivation and the psychological needs that foster growth, well-being, and performance.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Autonomy: Individuals thrive when they feel in control of their own actions and choices, rather than pressured externally.",
+			"Competence: The need to feel effective and capable in tasks promotes motivation and personal development.",
+			"Relatedness: Meaningful connections with others satisfy social needs, enhancing motivation and psychological well-being.",
+			"Intrinsic vs extrinsic motivation: People perform best and feel most fulfilled when driven by internal rewards rather than external pressures or incentives."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Self-Determination Theory by Edward Deci and Richard Ryan",
+				"url": "https://en.wikipedia.org/wiki/Self-determination_theory"
+			},
+			{
+				"type": "video",
+				"title": "Self-Determination Theory Explained",
+				"url": "https://www.youtube.com/watch?v=5_qDgOef8_g"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["motivation", "psychology", "wellbeing"]
+	},
+	{
+		"id": "critical_thinking",
+		"name": "Critical Thinking",
+		"description": "The disciplined process of actively analyzing, evaluating, and synthesizing information to make reasoned judgments and solve problems effectively.",
+		"category": "Cognitive Skills",
+		"key_ideas": [
+			"Analysis and evaluation: Breaking down arguments or ideas into parts to examine logic, evidence, and assumptions.",
+			"Avoiding bias: Identifying personal or external biases that may distort understanding or reasoning.",
+			"Problem solving: Applying logical reasoning and creativity to develop solutions based on evidence and sound judgment.",
+			"Reflective thinking: Continuously questioning one’s own beliefs and conclusions to improve clarity and understanding."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Critical Thinking by Richard Paul and Linda Elder",
+				"url": "https://en.wikipedia.org/wiki/Critical_thinking"
+			},
+			{
+				"type": "video",
+				"title": "Critical Thinking Skills Explained",
+				"url": "https://www.youtube.com/watch?v=6OLPL5p0fMg"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["reasoning", "logic", "problem-solving"]
+	},
+	{
+		"id": "virtue_ethics",
+		"name": "Virtue Ethics",
+		"description": "An ethical theory emphasizing character and moral virtues rather than rules or consequences as the foundation of ethical behavior.",
+		"category": "Philosophy",
+		"key_ideas": [
+			"Focus on character: Moral evaluation is based on cultivating virtues like courage, honesty, and compassion rather than following strict rules.",
+			"Habit formation: Ethical living requires practicing virtuous actions consistently until they become second nature.",
+			"Practical wisdom: Understanding how to act rightly in complex situations requires judgment, experience, and insight rather than rigid principles.",
+			"Eudaimonia: The ultimate goal is human flourishing and living a fulfilling, virtuous life aligned with one’s potential."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Nicomachean Ethics by Aristotle",
+				"url": "https://en.wikipedia.org/wiki/Nicomachean_Ethics"
+			},
+			{
+				"type": "video",
+				"title": "Virtue Ethics Explained",
+				"url": "https://www.youtube.com/watch?v=od3Lh-8YpU8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["ethics", "virtues", "character"]
+	},
+	{
+		"id": "positive_psychology",
+		"name": "Positive Psychology",
+		"description": "A branch of psychology that studies human strengths, well-being, and optimal functioning rather than focusing solely on mental illness.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Focus on strengths: Identifying and cultivating individual talents, skills, and virtues to improve life satisfaction.",
+			"Happiness and well-being: Studying factors like gratitude, optimism, and resilience that contribute to long-term mental and emotional health.",
+			"Flow and engagement: Encouraging activities that foster deep involvement and intrinsic enjoyment, enhancing personal fulfillment.",
+			"Meaning and purpose: Promoting life experiences that give individuals a sense of meaning, connectedness, and contribution beyond themselves."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Flourish by Martin Seligman",
+				"url": "https://en.wikipedia.org/wiki/Flourish_(book)"
+			},
+			{
+				"type": "video",
+				"title": "Positive Psychology Explained",
+				"url": "https://www.youtube.com/watch?v=GXy__kBVq1M"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["wellbeing", "strengths", "psychology"]
+	},
+	{
+		"id": "systems_thinking",
+		"name": "Systems Thinking",
+		"description": "An approach to understanding complex systems by examining the relationships and interactions between their components rather than focusing on isolated parts.",
+		"category": "Cognitive Skills",
+		"key_ideas": [
+			"Interconnectedness: Understanding that elements within a system influence each other and that changes in one part can affect the whole.",
+			"Feedback loops: Recognizing patterns of reinforcement or balancing forces that stabilize or destabilize a system.",
+			"Holistic perspective: Evaluating problems in context, considering long-term effects and unintended consequences.",
+			"Problem-solving approach: Applying systems thinking to identify leverage points where small interventions can create meaningful, sustainable change."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Thinking in Systems by Donella Meadows",
+				"url": "https://en.wikipedia.org/wiki/Thinking_in_Systems"
+			},
+			{
+				"type": "video",
+				"title": "Systems Thinking Explained",
+				"url": "https://www.youtube.com/watch?v=3zKzFQO0WRs"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["systems", "complexity", "problem-solving"]
+	},
+	{
+		"id": "existential_psychology",
+		"name": "Existential Psychology",
+		"description": "A branch of psychology focusing on human existence, freedom, responsibility, and the search for meaning, integrating philosophy with therapeutic practice.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Search for meaning: Individuals strive to find personal purpose and significance in a world that can feel indifferent or chaotic.",
+			"Freedom and responsibility: People must confront the reality that their choices shape their lives, and they bear the consequences of these choices.",
+			"Confronting mortality: Awareness of death motivates individuals to live authentically and prioritize meaningful goals.",
+			"Authenticity and self-awareness: Emphasizes understanding one’s true self and acting in accordance with personal values rather than external pressures."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Existential Psychotherapy by Irvin D. Yalom",
+				"url": "https://en.wikipedia.org/wiki/Existential_psychotherapy"
+			},
+			{
+				"type": "video",
+				"title": "Existential Psychology Explained",
+				"url": "https://www.youtube.com/watch?v=7r5KcTLG0Vk"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "existence", "authenticity"]
+	},
+	{
+		"id": "stoic_cognitive_therapy",
+		"name": "Stoic Cognitive Therapy",
+		"description": "A therapeutic approach inspired by Stoic philosophy, emphasizing rational thinking, emotional resilience, and focusing on what is within one’s control.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Control over perception: Individuals can choose how to interpret events, reducing emotional suffering caused by negative assumptions.",
+			"Focus on what is controllable: Energy should be spent on actions within one’s control rather than worrying about external outcomes.",
+			"Practicing virtue: Developing courage, wisdom, temperance, and justice strengthens emotional resilience and moral character.",
+			"Reframing challenges: Adversity is seen as an opportunity to practice self-discipline, patience, and growth."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "A Guide to the Good Life by William B. Irvine",
+				"url": "https://en.wikipedia.org/wiki/A_Guide_to_the_Good_Life"
+			},
+			{
+				"type": "video",
+				"title": "Stoic Cognitive Therapy Explained",
+				"url": "https://www.youtube.com/watch?v=HLN0s5QmRUY"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["stoicism", "therapy", "resilience"]
+	},
+	{
+		"id": "social_identity_theory",
+		"name": "Social Identity Theory",
+		"description": "A social psychology theory exploring how people categorize themselves and others into groups, affecting behavior, attitudes, and intergroup relations.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Group membership: People derive self-esteem and identity from the social groups they belong to, influencing behavior and perception.",
+			"Ingroup favoritism: Individuals tend to favor members of their own group, often unconsciously, which can affect decision-making and judgments.",
+			"Outgroup bias: Negative attitudes or stereotyping of groups outside one’s own can create conflict and discrimination.",
+			"Social categorization: People simplify complex social environments by classifying themselves and others, shaping interactions and social norms."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Social Identity and Intergroup Relations by Henri Tajfel",
+				"url": "https://en.wikipedia.org/wiki/Social_identity_theory"
+			},
+			{
+				"type": "video",
+				"title": "Social Identity Theory Explained",
+				"url": "https://www.youtube.com/watch?v=4Snw5QkZhE8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["identity", "groups", "psychology"]
+	},
+	{
+		"id": "attachment_theory",
+		"name": "Attachment Theory",
+		"description": "A psychological framework describing the dynamics of long-term relationships, focusing on how early bonds with caregivers shape adult attachment styles.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Secure attachment: Individuals develop trust and confidence in relationships, feeling comfortable with intimacy and independence.",
+			"Anxious attachment: Fear of abandonment or rejection can cause overdependence, anxiety, and insecurity in relationships.",
+			"Avoidant attachment: Individuals maintain emotional distance and may suppress feelings to protect themselves from potential hurt.",
+			"Impact on adulthood: Early attachment patterns influence adult romantic relationships, friendships, and emotional regulation."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Attachment by John Bowlby",
+				"url": "https://en.wikipedia.org/wiki/Attachment_theory"
+			},
+			{
+				"type": "video",
+				"title": "Attachment Theory Explained",
+				"url": "https://www.youtube.com/watch?v=SfGv7EEyhbQ"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "relationships", "development"]
+	},
+	{
+		"id": "hero_journey",
+		"name": "The Hero's Journey",
+		"description": "A narrative framework describing the stages of a hero’s adventure, transformation, and return, used in storytelling and myth analysis.",
+		"category": "Storytelling",
+		"key_ideas": [
+			"Call to adventure: The hero is invited to leave the familiar world and face challenges that require growth and courage.",
+			"Trials and challenges: Obstacles, mentors, and enemies help the hero develop skills, resilience, and self-knowledge.",
+			"Transformation: Through facing adversity, the hero undergoes profound internal change, gaining wisdom or insight.",
+			"Return and integration: The hero comes back to the ordinary world, often sharing knowledge or benefits with the community."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Hero with a Thousand Faces by Joseph Campbell",
+				"url": "https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces"
+			},
+			{
+				"type": "video",
+				"title": "The Hero's Journey Explained",
+				"url": "https://www.youtube.com/watch?v=J8U7Z2xv9ls"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["storytelling", "myth", "narrative"]
+	},
+	{
+		"id": "emotional_intelligence",
+		"name": "Emotional Intelligence",
+		"description": "The ability to recognize, understand, and manage one’s own emotions and the emotions of others to improve relationships and decision-making.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Self-awareness: Recognizing one’s emotional states and their impact on thoughts, decisions, and behavior.",
+			"Self-regulation: Controlling impulses and adapting emotional responses to different situations for better outcomes.",
+			"Empathy: Understanding and responding to the emotions of others in a compassionate and appropriate manner.",
+			"Social skills: Developing communication, conflict resolution, and relationship-building skills through emotional awareness."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Emotional Intelligence by Daniel Goleman",
+				"url": "https://en.wikipedia.org/wiki/Emotional_Intelligence_(book)"
+			},
+			{
+				"type": "video",
+				"title": "Emotional Intelligence Explained",
+				"url": "https://www.youtube.com/watch?v=n6MRsGwyMuQ"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["emotions", "psychology", "relationships"]
+	},
+	{
+		"id": "game_theory",
+		"name": "Game Theory",
+		"description": "A mathematical framework for analyzing strategic interactions where the outcomes depend on the choices of multiple decision-makers.",
+		"category": "Economics",
+		"key_ideas": [
+			"Strategic thinking: Understanding that one’s decisions influence and are influenced by the decisions of others.",
+			"Nash equilibrium: A situation where no player can benefit by changing their strategy unilaterally, representing a stable outcome.",
+			"Cooperation vs competition: Game theory studies how individuals or groups cooperate, compete, or negotiate to maximize outcomes.",
+			"Applications: Used in economics, politics, psychology, and biology to predict behavior in complex systems."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Theory of Games and Economic Behavior by John von Neumann and Oskar Morgenstern",
+				"url": "https://en.wikipedia.org/wiki/The_Theory_of_Games_and_Economic_Behavior"
+			},
+			{
+				"type": "video",
+				"title": "Game Theory Explained",
+				"url": "https://www.youtube.com/watch?v=GmHv19AUo8I"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["strategy", "decision-making", "economics"]
+	},
+	{
+		"id": "self_compassion",
+		"name": "Self-Compassion",
+		"description": "The practice of treating oneself with kindness, understanding, and acceptance, especially during times of failure or suffering.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Kindness to self: Responding to personal failures or challenges with care rather than self-criticism.",
+			"Common humanity: Recognizing that suffering and imperfection are shared human experiences, reducing feelings of isolation.",
+			"Mindfulness: Observing thoughts and emotions non-judgmentally, allowing one to respond calmly to difficulties.",
+			"Emotional resilience: Practicing self-compassion fosters psychological well-being, coping skills, and long-term mental health."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Self-Compassion by Kristin Neff",
+				"url": "https://en.wikipedia.org/wiki/Self-Compassion"
+			},
+			{
+				"type": "video",
+				"title": "Self-Compassion Explained",
+				"url": "https://www.youtube.com/watch?v=IvtZBUSplr4"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "wellbeing", "self-care"]
+	},
+	{
+		"id": "mindfulness",
+		"name": "Mindfulness",
+		"description": "The psychological practice of paying deliberate, non-judgmental attention to the present moment to enhance awareness, focus, and well-being.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Present-moment awareness: Fully attending to thoughts, sensations, and feelings without distraction or judgment.",
+			"Acceptance: Observing experiences without attempting to suppress or overanalyze them, reducing stress and anxiety.",
+			"Focus and clarity: Mindfulness enhances concentration, decision-making, and emotional regulation by fostering awareness.",
+			"Health benefits: Regular practice is associated with reduced stress, improved mental health, and better physical well-being."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Miracle of Mindfulness by Thich Nhat Hanh",
+				"url": "https://en.wikipedia.org/wiki/Thich_Nhat_Hanh"
+			},
+			{
+				"type": "video",
+				"title": "Mindfulness Explained",
+				"url": "https://www.youtube.com/watch?v=inpok4MKVLM"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["meditation", "awareness", "psychology"]
+	},
+	{
+		"id": "behaviorism",
+		"name": "Behaviorism",
+		"description": "A psychological approach that focuses on observable behaviors, emphasizing the role of environmental stimuli in shaping actions rather than internal mental states.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Stimulus-response learning: Behavior is acquired and modified through associations between stimuli and responses, as demonstrated in classical and operant conditioning.",
+			"Reinforcement and punishment: Positive or negative reinforcement strengthens behavior, while punishment reduces the likelihood of certain behaviors recurring.",
+			"Environmental determinism: Behaviorists believe that actions are largely shaped by environmental conditions rather than innate or subconscious processes.",
+			"Observable behavior focus: Internal mental processes are considered secondary or irrelevant for scientific study; only measurable actions are analyzed."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Behaviorism by John B. Watson",
+				"url": "https://en.wikipedia.org/wiki/Behaviorism"
+			},
+			{
+				"type": "video",
+				"title": "Behaviorism Explained",
+				"url": "https://www.youtube.com/watch?v=kq0dWbA1E0s"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "learning", "behavior"]
+	},
+	{
+		"id": "self_efficacy",
+		"name": "Self-Efficacy",
+		"description": "A concept in psychology describing a person’s belief in their ability to succeed in specific tasks or achieve goals, influencing motivation and behavior.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Belief in capability: Individuals with high self-efficacy trust their ability to handle challenges effectively and achieve desired outcomes.",
+			"Influence on motivation: Self-efficacy drives persistence and effort, determining how people approach difficult tasks or obstacles.",
+			"Coping strategies: Higher self-efficacy promotes problem-solving, resilience, and adaptive coping mechanisms during stress.",
+			"Development: Self-efficacy can be enhanced through mastery experiences, social modeling, verbal encouragement, and managing emotional states."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Self-Efficacy: The Exercise of Control by Albert Bandura",
+				"url": "https://en.wikipedia.org/wiki/Self-efficacy"
+			},
+			{
+				"type": "video",
+				"title": "Self-Efficacy Explained",
+				"url": "https://www.youtube.com/watch?v=Vn0D5GgDKdQ"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "motivation", "beliefs"]
+	},
+	{
+		"id": "existential_art",
+		"name": "Existentialism in Art",
+		"description": "An artistic movement that explores themes of existence, freedom, absurdity, and the human condition, often emphasizing individuality and subjective experience.",
+		"category": "Art",
+		"key_ideas": [
+			"Confronting the absurd: Art expresses the tension between human desire for meaning and the indifference of the universe.",
+			"Individual perspective: Existential art emphasizes personal experience, emotions, and choices rather than universal narratives.",
+			"Themes of freedom and responsibility: Works often depict characters facing existential dilemmas and ethical choices.",
+			"Authenticity and self-expression: Artists explore inner thoughts and existential struggles through symbolism, abstraction, and innovative forms."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Existentialism and Art by Walter Kaufmann",
+				"url": "https://en.wikipedia.org/wiki/Walter_Kaufmann_(philosopher)"
+			},
+			{
+				"type": "video",
+				"title": "Existentialism in Art Explained",
+				"url": "https://www.youtube.com/watch?v=HQ0RprMa8Dc"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["art", "existentialism", "creativity"]
+	},
+	{
+		"id": "cognitive_load_theory",
+		"name": "Cognitive Load Theory",
+		"description": "A learning theory explaining how working memory capacity affects the ability to process and retain information, emphasizing instructional design.",
+		"category": "Education",
+		"key_ideas": [
+			"Working memory limits: Humans can only process a limited amount of information at a time; overload reduces learning efficiency.",
+			"Intrinsic load: Complexity inherent to the material itself requires cognitive effort and should be managed carefully in teaching.",
+			"Extraneous load: Poorly designed instructions or irrelevant information increase unnecessary cognitive burden and hinder learning.",
+			"Germane load: Effective learning strategies enhance understanding by encouraging mental schema formation and deeper processing."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Cognitive Load Theory by John Sweller",
+				"url": "https://en.wikipedia.org/wiki/Cognitive_load"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Load Theory Explained",
+				"url": "https://www.youtube.com/watch?v=Rk07vuk6Cok"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["education", "cognition", "learning"]
+	},
+	{
+		"id": "narrative_psychology",
+		"name": "Narrative Psychology",
+		"description": "A psychological approach focusing on how humans construct meaning, identity, and understanding of life events through stories and personal narratives.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Identity construction: People create coherent self-stories to make sense of experiences and establish a sense of continuity.",
+			"Meaning-making: Narratives help interpret complex or traumatic events, providing psychological structure and coping mechanisms.",
+			"Cultural influence: Social and cultural narratives shape individual stories, values, and worldviews.",
+			"Therapeutic application: Narrative therapy encourages rewriting personal stories to foster empowerment, resilience, and emotional healing."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Stories We Live By by Dan P. McAdams",
+				"url": "https://en.wikipedia.org/wiki/Dan_P._McAdams"
+			},
+			{
+				"type": "video",
+				"title": "Narrative Psychology Explained",
+				"url": "https://www.youtube.com/watch?v=Gmqeh3Vv4k0"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "narrative", "identity"]
+	},
+	{
+		"id": "moral_psychology",
+		"name": "Moral Psychology",
+		"description": "The study of moral development, ethical decision-making, and the psychological mechanisms underlying judgments of right and wrong.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Moral development: Individuals evolve in understanding ethical principles from childhood to adulthood, influenced by cognitive and social factors.",
+			"Moral reasoning: People use rational, emotional, and intuitive processes to make judgments about right and wrong.",
+			"Influence of emotion: Empathy, guilt, and shame significantly shape moral judgments and prosocial behavior.",
+			"Cultural and situational context: Ethical decisions are influenced by social norms, group expectations, and situational pressures."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Righteous Mind by Jonathan Haidt",
+				"url": "https://en.wikipedia.org/wiki/The_Righteous_Mind"
+			},
+			{
+				"type": "video",
+				"title": "Moral Psychology Explained",
+				"url": "https://www.youtube.com/watch?v=Qe_ZrD-4G7I"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "ethics", "decision-making"]
+	},
+	{
+		"id": "constructivism",
+		"name": "Constructivism",
+		"description": "An educational and psychological theory asserting that learners actively construct knowledge based on experience and interaction with their environment.",
+		"category": "Education",
+		"key_ideas": [
+			"Active learning: Knowledge is not passively received; learners engage with material to build understanding.",
+			"Prior knowledge integration: New information is interpreted through the lens of existing mental frameworks or schemas.",
+			"Social interaction: Collaboration, discussion, and feedback from others enhance learning and understanding.",
+			"Contextualized learning: Knowledge acquisition is most effective when situated in meaningful, real-world contexts."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Mind in Society by Lev Vygotsky",
+				"url": "https://en.wikipedia.org/wiki/Lev_Vygotsky"
+			},
+			{
+				"type": "video",
+				"title": "Constructivism Explained",
+				"url": "https://www.youtube.com/watch?v=7jcyKjO6b_k"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["education", "learning", "cognition"]
+	},
+	{
+		"id": "decision_fatigue",
+		"name": "Decision Fatigue",
+		"description": "A psychological phenomenon where making repeated decisions leads to mental exhaustion, reducing decision quality and self-control.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Cognitive depletion: Continuous decision-making depletes mental resources, leading to impaired judgment and impulsive choices.",
+			"Simplification strategies: People may rely on heuristics, default options, or avoidance to reduce cognitive burden.",
+			"Impact on daily life: Decision fatigue affects work performance, health choices, financial decisions, and social interactions.",
+			"Prevention techniques: Prioritizing important decisions, limiting trivial choices, and scheduling breaks can mitigate fatigue effects."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Willpower: Rediscovering the Greatest Human Strength by Roy F. Baumeister",
+				"url": "https://en.wikipedia.org/wiki/Willpower_(book)"
+			},
+			{
+				"type": "video",
+				"title": "Decision Fatigue Explained",
+				"url": "https://www.youtube.com/watch?v=V6s0b8xTKbE"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "decision-making", "cognition"]
+	},
+	{
+		"id": "epigenetics_psychology",
+		"name": "Epigenetics in Psychology",
+		"description": "The study of how environmental factors influence gene expression and behavior, bridging biology and psychology to understand human development.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Gene-environment interaction: Behavioral traits are shaped by complex interactions between genetics and environmental experiences.",
+			"Epigenetic mechanisms: DNA methylation and histone modification regulate gene expression without changing the underlying genetic code.",
+			"Impact on mental health: Stress, trauma, and lifestyle can alter gene expression, influencing susceptibility to mental disorders.",
+			"Transgenerational effects: Some epigenetic changes may be passed down, affecting behavior and health across generations."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Epigenetics: The Ultimate Mystery of Inheritance by Richard C. Francis",
+				"url": "https://en.wikipedia.org/wiki/Epigenetics"
+			},
+			{
+				"type": "video",
+				"title": "Epigenetics Explained",
+				"url": "https://www.youtube.com/watch?v=kp1bZEUgqVI"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "biology", "behavior"]
+	},
+	{
+		"id": "resilience_psychology",
+		"name": "Resilience",
+		"description": "The psychological capacity to adapt to stress, adversity, trauma, or significant life challenges, maintaining mental health and functionality.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Adaptation to adversity: Resilient individuals bounce back from setbacks and recover emotionally, mentally, and physically.",
+			"Coping strategies: Effective use of problem-solving, social support, and cognitive reframing enhances resilience.",
+			"Growth through challenge: Experiencing adversity can strengthen coping mechanisms and foster personal development.",
+			"Dynamic process: Resilience is not fixed but can be developed over time through practice, reflection, and learning from experiences."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Resilience Factor by Karen Reivich and Andrew Shatte",
+				"url": "https://en.wikipedia.org/wiki/Karen_Reivich"
+			},
+			{
+				"type": "video",
+				"title": "Psychology of Resilience Explained",
+				"url": "https://www.youtube.com/watch?v=5z3VqOG9i6I"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["resilience", "mental health", "psychology"]
+	},
+	{
+		"id": "post_traumatic_growth",
+		"name": "Post-Traumatic Growth",
+		"description": "Positive psychological change experienced as a result of struggling with highly challenging life circumstances, leading to enhanced functioning and meaning.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Transformation through trauma: Individuals often develop new perspectives, deeper appreciation of life, and stronger relationships after traumatic experiences.",
+			"Personal growth domains: Growth may include improved self-perception, enhanced spiritual or philosophical insight, and increased resilience.",
+			"Active meaning-making: Coping strategies involve finding meaning in adversity and integrating it into a coherent personal narrative.",
+			"Social support: Strong relationships and community connections facilitate growth and emotional recovery."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Posttraumatic Growth Workbook by Richard G. Tedeschi",
+				"url": "https://en.wikipedia.org/wiki/Posttraumatic_growth"
+			},
+			{
+				"type": "video",
+				"title": "Post-Traumatic Growth Explained",
+				"url": "https://www.youtube.com/watch?v=9PZRAG6FqI8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "trauma", "growth"]
+	},
+	{
+		"id": "learned_helplessness",
+		"name": "Learned Helplessness",
+		"description": "A psychological condition in which individuals believe they have no control over outcomes, often resulting from repeated exposure to uncontrollable negative events.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Perceived lack of control: Repeated failure or trauma leads individuals to feel powerless to change circumstances.",
+			"Impact on behavior: Learned helplessness can reduce motivation, increase passivity, and contribute to depression or anxiety.",
+			"Cognitive patterns: Negative beliefs and expectations reinforce feelings of helplessness and limit proactive behavior.",
+			"Intervention and recovery: Therapy, skill-building, and gradual exposure to controllable challenges can reverse learned helplessness."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Learned Helplessness by Martin Seligman",
+				"url": "https://en.wikipedia.org/wiki/Learned_helplessness"
+			},
+			{
+				"type": "video",
+				"title": "Learned Helplessness Explained",
+				"url": "https://www.youtube.com/watch?v=93oA6X3Jb3A"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "behavior", "mental health"]
+	},
+	{
+		"id": "alexithymia",
+		"name": "Alexithymia",
+		"description": "A personality trait characterized by difficulty identifying and expressing emotions, often leading to interpersonal and mental health challenges.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Emotional awareness deficit: Individuals struggle to recognize and differentiate their own feelings.",
+			"Communication challenges: Difficulty expressing emotions can hinder relationships and social interactions.",
+			"Association with mental health: Alexithymia is linked to depression, anxiety, and psychosomatic disorders.",
+			"Therapeutic approaches: Emotional awareness training, psychotherapy, and mindfulness techniques can help individuals identify and manage emotions."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Alexithymia: A Clinician’s Guide by Graeme J. Taylor",
+				"url": "https://en.wikipedia.org/wiki/Alexithymia"
+			},
+			{
+				"type": "video",
+				"title": "Alexithymia Explained",
+				"url": "https://www.youtube.com/watch?v=_MZyNG1SnR8"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "emotions", "mental health"]
+	},
+	{
+		"id": "emotion_regulation",
+		"name": "Emotion Regulation",
+		"description": "The ability to monitor, evaluate, and modify emotional reactions in order to achieve adaptive outcomes in behavior and mental health.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Awareness of emotions: Recognizing emotional states accurately is the first step toward regulation.",
+			"Adaptive strategies: Techniques such as cognitive reappraisal, mindfulness, and problem-solving reduce maladaptive responses.",
+			"Impact on mental health: Effective emotion regulation enhances resilience, reduces stress, and improves social functioning.",
+			"Behavioral outcomes: Controlled emotional responses lead to better decision-making, interpersonal relationships, and overall psychological well-being."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Emotion Regulation by James J. Gross",
+				"url": "https://en.wikipedia.org/wiki/Emotion_regulation"
+			},
+			{
+				"type": "video",
+				"title": "Emotion Regulation Explained",
+				"url": "https://www.youtube.com/watch?v=9Ff6YB-6Xbc"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "emotions", "mental health"]
+	},
+	{
+		"id": "cognitive_reappraisal",
+		"name": "Cognitive Reappraisal",
+		"description": "A psychological strategy involving changing the interpretation of a situation to alter its emotional impact, enhancing coping and mental health.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Reframing perspective: Individuals reinterpret negative or stressful events in ways that reduce emotional distress.",
+			"Adaptive coping: Cognitive reappraisal promotes problem-solving and constructive responses rather than avoidance or rumination.",
+			"Neurocognitive basis: Reappraisal activates prefrontal regions to regulate amygdala-driven emotional responses.",
+			"Applications: Effective in therapy, stress management, and emotion regulation for mental health improvement."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Handbook of Emotion Regulation by James J. Gross",
+				"url": "https://en.wikipedia.org/wiki/Emotion_regulation"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Reappraisal Explained",
+				"url": "https://www.youtube.com/watch?v=O3N69Z5Z9lE"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "emotion", "coping"]
+	},
+	{
+		"id": "mind_wandering",
+		"name": "Mind Wandering",
+		"description": "The mental phenomenon where attention drifts away from a task or external environment toward unrelated thoughts, imagination, or daydreams.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Spontaneous thought: Mind wandering occurs naturally, often during monotonous tasks, reflecting internal mental activity.",
+			"Pros and cons: It can enhance creativity and problem-solving but may impair task performance and focus.",
+			"Neural mechanisms: Default mode network activation is associated with mind wandering, introspection, and self-referential thinking.",
+			"Emotional impact: Mind wandering can influence mood, leading to positive insights or negative rumination depending on content."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Wandering Mind by Michael C. Corballis",
+				"url": "https://en.wikipedia.org/wiki/Mind_wandering"
+			},
+			{
+				"type": "video",
+				"title": "Mind Wandering Explained",
+				"url": "https://www.youtube.com/watch?v=W_u3p9dhhCk"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "cognition", "attention"]
+	},
+	{
+		"id": "impulse_control",
+		"name": "Impulse Control",
+		"description": "The ability to resist urges, temptations, or immediate reactions in order to achieve long-term goals or conform to social norms.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Self-regulation: Impulse control enables individuals to manage immediate desires in favor of considered actions.",
+			"Neurocognitive basis: Prefrontal cortex plays a critical role in regulating impulsive behavior.",
+			"Behavioral outcomes: Strong impulse control reduces risk-taking, addiction, and socially inappropriate behaviors.",
+			"Development and training: Skills can be enhanced through mindfulness, cognitive strategies, and structured behavioral exercises."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Marshmallow Test by Walter Mischel",
+				"url": "https://en.wikipedia.org/wiki/Walter_Mischel"
+			},
+			{
+				"type": "video",
+				"title": "Impulse Control Explained",
+				"url": "https://www.youtube.com/watch?v=jD0s2Z4g6uM"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "self-control", "behavior"]
+	},
+	{
+		"id": "rumination",
+		"name": "Rumination",
+		"description": "A repetitive, passive focus on negative feelings, problems, or experiences, often associated with depression and anxiety.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Negative thought cycles: Repetitive contemplation of distressing experiences can maintain or worsen mood disorders.",
+			"Cognitive focus: Rumination involves overanalyzing causes and consequences of events rather than problem-solving.",
+			"Emotional impact: Increases stress, anxiety, and depressive symptoms, while reducing proactive coping.",
+			"Intervention strategies: Mindfulness, cognitive-behavioral techniques, and distraction can break ruminative cycles and improve mental health."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Rumination and Depression by Susan Nolen-Hoeksema",
+				"url": "https://en.wikipedia.org/wiki/Susan_Nolen-Hoeksema"
+			},
+			{
+				"type": "video",
+				"title": "Rumination Explained",
+				"url": "https://www.youtube.com/watch?v=NkF2-K6p3DI"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "depression", "cognition"]
+	},
+	{
+		"id": "cognitive_distortions",
+		"name": "Cognitive Distortions",
+		"description": "Systematic patterns of biased or irrational thinking that can influence emotions, behavior, and decision-making, often contributing to mental health issues.",
+		"category": "Psychology",
+		"key_ideas": [
+			"All-or-nothing thinking: Viewing situations in black-and-white terms, ignoring any middle ground or nuance.",
+			"Overgeneralization: Drawing broad conclusions from a single event or limited evidence, amplifying negative perceptions.",
+			"Catastrophizing: Expecting the worst possible outcomes without realistic appraisal of probabilities.",
+			"Emotional reasoning: Assuming that emotions reflect objective reality, leading to distorted beliefs and reactions."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Feeling Good: The New Mood Therapy by David D. Burns",
+				"url": "https://en.wikipedia.org/wiki/David_D._Burns"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Distortions Explained",
+				"url": "https://www.youtube.com/watch?v=-4EDhdAHrOg"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "cognition", "mental health"]
+	},
+
+	{
+		"id": "social_anxiety",
+		"name": "Social Anxiety",
+		"description": "A mental health condition characterized by intense fear, embarrassment, or worry about social situations, often leading to avoidance and distress.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Fear of judgment: Individuals experience persistent concern about negative evaluation by others.",
+			"Avoidance behaviors: Social anxiety can lead to withdrawal from social interactions and opportunities, reinforcing isolation.",
+			"Physical and emotional symptoms: Palpitations, sweating, blushing, and panic-like feelings often accompany social fears.",
+			"Therapeutic approaches: Cognitive-behavioral therapy, exposure therapy, mindfulness, and medication can reduce symptoms and improve functioning."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Overcoming Social Anxiety and Shyness by Gillian Butler",
+				"url": "https://en.wikipedia.org/wiki/Gillian_Butler"
+			},
+			{
+				"type": "video",
+				"title": "Social Anxiety Explained",
+				"url": "https://www.youtube.com/watch?v=1jK3m-hk-Gs"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "anxiety", "mental health"]
+	},
+	{
+		"id": "perfectionism",
+		"name": "Perfectionism",
+		"description": "A personality trait or cognitive pattern where individuals set unrealistically high standards for themselves, often accompanied by critical self-evaluation.",
+		"category": "Psychology",
+		"key_ideas": [
+			"High standards: Perfectionists pursue flawlessness and may become preoccupied with mistakes or imperfections.",
+			"Self-critical tendencies: Excessive self-judgment can lead to anxiety, depression, and procrastination.",
+			"Impact on performance: Paradoxically, perfectionism can hinder productivity, creativity, and satisfaction with achievements.",
+			"Therapeutic interventions: Cognitive-behavioral techniques, mindfulness, and self-compassion practices can help manage maladaptive perfectionism."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Perfectionism Workbook by Taylor Newendorp",
+				"url": "https://www.goodreads.com/book/show/50355844-the-perfectionism-workbook"
+			},
+			{
+				"type": "video",
+				"title": "Perfectionism Explained",
+				"url": "https://www.youtube.com/watch?v=QWfRa8O3nZw"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "personality", "mental health"]
+	},
+	{
+		"id": "burnout",
+		"name": "Burnout",
+		"description": "A state of chronic physical and emotional exhaustion caused by prolonged stress, often accompanied by cynicism, detachment, and reduced professional efficacy.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Chronic stress: Prolonged exposure to high demands without adequate recovery leads to mental, emotional, and physical fatigue.",
+			"Emotional exhaustion: Individuals may feel depleted, drained, and unable to cope with routine tasks or responsibilities.",
+			"Depersonalization and cynicism: A negative or detached attitude toward work, colleagues, or life may emerge as a coping mechanism.",
+			"Reduced efficacy: Burnout diminishes motivation, productivity, and a sense of accomplishment, necessitating rest, support, and systemic changes."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Burnout: The Secret to Unlocking the Stress Cycle by Emily Nagoski",
+				"url": "https://en.wikipedia.org/wiki/Emily_Nagoski"
+			},
+			{
+				"type": "video",
+				"title": "Burnout Explained",
+				"url": "https://www.youtube.com/watch?v=V2OeMl6ZXYI"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "stress", "mental health"]
+	},
+	{
+		"id": "imposter_syndrome",
+		"name": "Imposter Syndrome",
+		"description": "A psychological pattern in which individuals doubt their accomplishments and fear being exposed as a fraud, despite evidence of success.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Self-doubt: Persistent feelings of inadequacy overshadow achievements, creating internal conflict and anxiety.",
+			"Attribution bias: Success is often attributed to luck or external factors rather than competence or skill.",
+			"Impact on mental health: Imposter syndrome can lead to anxiety, stress, perfectionism, and avoidance of new challenges.",
+			"Intervention strategies: Cognitive reframing, mentorship, therapy, and recognition of personal accomplishments can reduce imposter feelings."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Secret Thoughts of Successful Women by Valerie Young",
+				"url": "https://en.wikipedia.org/wiki/Valerie_Young_(author)"
+			},
+			{
+				"type": "video",
+				"title": "Imposter Syndrome Explained",
+				"url": "https://www.youtube.com/watch?v=8eR6sQMIeLU"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "self-perception", "mental health"]
+	},
+	{
+		"id": "psychological_flexibility",
+		"name": "Psychological Flexibility",
+		"description": "The ability to adapt thoughts, emotions, and behaviors to changing circumstances while maintaining personal values and well-being.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Acceptance of experiences: Willingness to experience thoughts and emotions without avoidance or judgment enhances mental health.",
+			"Value-driven action: Behaviors aligned with personal values provide direction and purpose even in adversity.",
+			"Cognitive adaptability: Flexible thinking allows individuals to reframe situations, solve problems creatively, and cope effectively.",
+			"Applications: Psychological flexibility is central to Acceptance and Commitment Therapy (ACT) and improves resilience, emotion regulation, and life satisfaction."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Acceptance and Commitment Therapy by Steven C. Hayes",
+				"url": "https://en.wikipedia.org/wiki/Acceptance_and_commitment_therapy"
+			},
+			{
+				"type": "video",
+				"title": "Psychological Flexibility Explained",
+				"url": "https://www.youtube.com/watch?v=ORiDNMLqOhg"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "flexibility", "therapy"]
+	},
+	{
+		"id": "neurodiversity",
+		"name": "Neurodiversity",
+		"description": "A concept recognizing and respecting neurological differences as natural variations of the human brain, including autism, ADHD, dyslexia, and other cognitive styles.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Value of difference: Neurological variations are seen as strengths or unique perspectives rather than deficits.",
+			"Inclusion and acceptance: Promoting societal support, accommodations, and understanding enhances mental health and social participation.",
+			"Self-identity and empowerment: Neurodiverse individuals benefit from recognition and validation of their experiences and abilities.",
+			"Educational and workplace implications: Tailored approaches to learning, communication, and productivity improve outcomes for neurodiverse populations."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "NeuroTribes by Steve Silberman",
+				"url": "https://en.wikipedia.org/wiki/NeuroTribes"
+			},
+			{
+				"type": "video",
+				"title": "Neurodiversity Explained",
+				"url": "https://www.youtube.com/watch?v=SoW_6kQ2xJ0"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "neurodiversity", "mental health"]
+	},
+	{
+		"id": "habit_formation",
+		"name": "Habit Formation",
+		"description": "The psychological process of creating automatic behaviors through repeated practice, reinforcement, and environmental cues.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Cue-routine-reward loop: Habits form when a trigger leads to a routine that provides a reward, reinforcing repetition.",
+			"Neurobehavioral mechanisms: Basal ganglia play a key role in automating behaviors, reducing cognitive load.",
+			"Behavioral change strategies: Breaking maladaptive habits or creating new ones requires awareness, gradual reinforcement, and environmental adjustments.",
+			"Impact on well-being: Effective habit formation can improve productivity, mental health, and lifestyle outcomes."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "The Power of Habit by Charles Duhigg",
+				"url": "https://en.wikipedia.org/wiki/The_Power_of_Habit"
+			},
+			{
+				"type": "video",
+				"title": "Habit Formation Explained",
+				"url": "https://www.youtube.com/watch?v=5_m3fI2jz8c"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "behavior", "mental health"]
+	},
+	{
+		"id": "cognitive_restructuring",
+		"name": "Cognitive Restructuring",
+		"description": "A therapeutic technique used to identify, challenge, and modify irrational or maladaptive thoughts to improve emotional and behavioral outcomes.",
+		"category": "Psychology",
+		"key_ideas": [
+			"Identifying negative thoughts: Recognizing cognitive distortions or unhelpful thought patterns that affect emotions and behavior.",
+			"Challenging beliefs: Evaluating evidence for and against negative thoughts to reduce bias and increase objectivity.",
+			"Replacing maladaptive cognitions: Developing alternative, balanced perspectives to reduce emotional distress.",
+			"Application in therapy: Central to cognitive-behavioral therapy (CBT), enhancing coping, problem-solving, and mental health."
+		],
+		"resources": [
+			{
+				"type": "book",
+				"title": "Cognitive Therapy of Depression by Aaron T. Beck",
+				"url": "https://en.wikipedia.org/wiki/Aaron_T._Beck"
+			},
+			{
+				"type": "video",
+				"title": "Cognitive Restructuring Explained",
+				"url": "https://www.youtube.com/watch?v=JqZb19J01WU"
+			}
+		],
+		"date_added": "2025-08-29",
+		"tags": ["psychology", "therapy", "cognition"]
+	}
+]

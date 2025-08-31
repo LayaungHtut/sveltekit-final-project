@@ -5,26 +5,27 @@
 	import { enhance } from '$app/forms';
 
 	let { form, data }: { form: ActionData; data: PageServerData } = $props();
-
 </script>
 
 <div class="mainbd">
 	<div class="navbar bg-base-100 shadow-sm">
 		<div class="navbar-start">
+			<img src="/src/lib/assets/images/doppelganger.png" alt="doppelganger" class="h-12 w-12" />
 			{#if data.user}
-			<div class="dropdown">
-					
-				<div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-					<Menu />
+				<div class="dropdown">
+					<div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+						<Menu />
+					</div>
+					<ul
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+					>
+						<li><a href="/main/Therapists">Homepage</a></li>
+						<li><a href="/main/Therapists/Dashboard">Dashboard</a></li>
+						<li><a href="/main/Therapists/Chats">Chats</a></li>
+						<li><a href="/main/Therapists/notes">Notes</a></li>
+						<li><a href="/main/Therapists/Calendar">Calender</a></li>
+					</ul>
 				</div>
-				<ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-					<li><a href="/">Homepage</a></li>
-					<li><a href="/">Dashboard</a></li>
-					<li><a href="/">Chats</a></li>
-					<li><a href="/main/notes">Notes</a></li>
-					<li><a href="/main/Calender">Calender</a></li>
-				</ul>
-			</div>
 			{/if}
 		</div>
 		<div class="navbar-center">
@@ -32,17 +33,15 @@
 				href="/"
 				class="btn btn-ghost text-xl"
 				style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
-				>MindSpace</a
+				>SerenityHaven</a
 			>
 		</div>
 		<div class="navbar-end">
 			{#if data.user}
 				<p>{data.user.username} ({data.user.role})</p>
-			
-			<form method="post" action="?/logout" use:enhance>
-	<button>Sign out</button>
-</form>
-				{/if}
+
+				
+			{/if}
 
 			<label class="swap swap-rotate">
 				<!-- this hidden checkbox controls the state -->
@@ -73,7 +72,7 @@
 		</div>
 	</div>
 	<!-- name of each tab group should be unique -->
-	<div class="tabs tabs-lift tabs-bottom" >
+	<div class="tabs tabs-lift tabs-bottom">
 		<input
 			type="radio"
 			name="my_tabs_5"
@@ -84,18 +83,19 @@
 		/>
 		<div class="tab-content p-0">
 			<div
-				class="hero min-h-screen"
-				style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
-			>
+	class="hero min-h-screen"
+	style="background-image: url('/src/lib/assets/images/360_F_209499600_LyFap3lMZtLV6XXP1CUfPfI30KettOG5.jpg');"
+>
+
 				<div class="hero-overlay"></div>
 				<div class="hero-content text-neutral-content text-center">
 					<div class="max-w-md">
 						<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
 						<p class="mb-5">
-							Welcome to MindSpace. Here, you can explore your thoughts, track your feelings, and
+							Welcome to SerenityHaven. Here, you can explore your thoughts, track your feelings, and
 							take small steps toward a calmer mind
 						</p>
-						<button class="btn btn-primary">Get Started</button>
+						<button onclick={() => goto('/auth/lucia/login-page')} class="btn btn-primary">Get Started</button>
 					</div>
 				</div>
 			</div>
@@ -131,86 +131,44 @@
 			</div>
 		</div>
 
-		<input
-			type="radio"
-			name="my_tabs_5"
-			class="tab"
-			aria-label="Sign up"
-			style="background-color: #60885E; color:antiquewhite;"
-		/>
+		<input type="radio" name="my_tabs_5" class="tab" aria-label="Sign up" style="background-color: #60885E; color:antiquewhite;"/>
+
 		<div class="tab-content p-0">
-			<div class="hero min-h-screen">
-				<div class="hero-content flex-col  lg:flex-row-reverse">
-					<div class="text-center lg:text-left">
-						<h1 class="text-5xl font-bold">Login now!</h1>
-						<p class="py-6">
-							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-							exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+			<div class="hero bg-base-200 min-h-screen">
+				<div class="hero-content flex-col gap-10 lg:flex-row-reverse">
+					<!-- Left: Welcome text -->
+					<div class="max-w-md text-center lg:text-left">
+						<h1 class="text-primary text-5xl font-extrabold">Welcome back!</h1>
+						<p class="text-base-content/70 py-6">
+							 Great to see you again! Log in to explore exercises, guides, and tools to support your wellbeing.
 						</p>
 					</div>
-					<div class="card w-full max-w-sm shrink-0 shadow-2xl">
-						<div class="card-body">
+
+					<!-- Right: Login card -->
+					<div class="card bg-base-100 w-full max-w-sm shadow-2xl">
+						<div class="card-body space-y-4">
 							{#if data.user}
-
-									<p>Logged in as {data.user.username}</p>
-									 <p>Role: {data.user.role}</p>
-									 <p>Email: {data.user.email}</p>
-									
-								{:else}
-									<form method="post" action="?/login" use:enhance>
-										<label class="input validator">
-											<svg
-												class="h-[1em] opacity-50"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 24"
-											>
-												<g
-													stroke-linejoin="round"
-													stroke-linecap="round"
-													stroke-width="2.5"
-													fill="none"
-													stroke="currentColor"
-												>
-													<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-													<circle cx="12" cy="7" r="4"></circle>
-												</g>
-											</svg>
-											<input name="username" />
-										</label>
-
-										<label class="input validator">
-											<svg
-												class="h-[1em] opacity-50"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 24"
-											>
-												<g
-													stroke-linejoin="round"
-													stroke-linecap="round"
-													stroke-width="2.5"
-													fill="none"
-													stroke="currentColor"
-												>
-													<path
-														d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
-													></path>
-													<circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
-												</g>
-											</svg>
-											<input type="password" name="password" />
-										</label>
-
-										<!-- svelte-ignore a11y_click_events_have_key_events -->
-										<span
-											role="button"
-											tabindex="0"
-											onclick={() => goto('auth/lucia/forgot-password')}>Forgot Password?</span
-										>
-										<!-- <p style="color: red">{form?.errors ?? ''}</p> -->
-										<button>Login</button>
-										<button onclick={() => goto('auth/lucia/register')}>Register</button>
-									</form>
-								{/if}
+								<div class="space-y-2 text-center">
+									<h2 class="text-primary text-xl font-bold">
+										👋 Hi {data.user.username}!
+									</h2>
+									<p class="text-sm opacity-70">Role: {data.user.role}</p>
+									<p class="text-sm opacity-70">Email: {data.user.email}</p>
+									<form method="post" action="?/logout" use:enhance>
+					<button class="btn btn-dash btn-error mr-5 ml-5">Sign out</button>
+				</form>
+								</div>
+							{:else}
+								<div class="text-center">
+									<h2 class="mb-4 text-lg font-semibold">Ready to start?</h2>
+									<button
+										class="btn btn-success flex w-full items-center gap-2"
+										onclick={() => goto('auth/lucia/login-page')}
+									>
+										Login
+									</button>
+								</div>
+							{/if}
 						</div>
 					</div>
 				</div>
@@ -219,7 +177,7 @@
 	</div>
 	<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-2">
 		<aside>
-			<p>Copyright © {new Date().getFullYear()} - All right reserved by MindSpace UIT</p>
+			<p>Copyright © {new Date().getFullYear()} - All right reserved by SerenityHaven UIT</p>
 		</aside>
 	</footer>
 </div>

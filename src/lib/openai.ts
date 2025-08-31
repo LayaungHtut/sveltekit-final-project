@@ -1,1 +1,9 @@
-// place files you want to import through the `$lib` alias in this folder.
+import OpenAI from 'openai';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const openai = new OpenAI({
+	apiKey: process.env.OPEN_AI_API
+});
+
+export default openai;

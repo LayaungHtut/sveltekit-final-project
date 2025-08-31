@@ -1,10 +1,10 @@
-<!-- src/routes/chat/[username]/+page.svelte -->
 <script lang="ts">
-	import { supabase } from '$lib/superbaseClient';
-	import { onMount } from 'svelte';
-	import { writable } from 'svelte/store';
-	import type { PageServerData } from './$types';
-	import { conversationId } from '$lib/conversation';
+	import { supabase } from "$lib/superbaseClient";
+	import { onMount } from "svelte";
+	import { writable } from "svelte/store";
+	import type { PageServerData } from "./$types";
+	import { conversationId } from "$lib/conversation";
+	import { ArrowLeft, Send } from "lucide-svelte";
 
 	let { data }: { data: PageServerData } = $props();
 
@@ -21,24 +21,23 @@
 	const partner = data.partner;
 	const convoId = conversationId(me.id, partner.id);
 
-	let message = $state('');
+	let message = $state("");
 	let chatWindow: HTMLDivElement | undefined;
 	const messages = writable<Message[]>([]);
 
 	async function fetchMessages() {
 		const { data: rows, error } = await supabase
-			.from<Message>('messages')
-			.select('*')
-			.eq('conversation_id', convoId)
-			.order('created_at', { ascending: true });
+			.from<Message>("messages")
+			.select("*")
+			.eq("conversation_id", convoId)
+			.order("created_at", { ascending: true });
 
-		if (error) {
-			console.error('Fetch error:', error);
-			return;
+		if (!error) {
+			messages.set(rows ?? []);
+			scrollToBottomSoon();
+		} else {
+			console.error("Fetch error:", error);
 		}
-
-		messages.set(rows ?? []);
-		scrollToBottomSoon();
 	}
 
 	async function sendMessage() {
@@ -51,101 +50,106 @@
 			conversation_id: convoId
 		};
 
-		const { error } = await supabase.from('messages').insert(payload);
+		const { error } = await supabase.from("messages").insert(payload);
 		if (error) {
-			console.error('Insert error:', error);
+			console.error("Insert error:", error);
 			return;
 		}
-		message = '';
+		message = "";
 	}
 
 	function scrollToBottomSoon() {
-		// allow DOM to paint first
 		setTimeout(() => {
 			if (chatWindow) chatWindow.scrollTop = chatWindow.scrollHeight;
-		}, 0);
+		}, 50);
 	}
 
+	onMount(() => {
+		fetchMessages();
 
-onMount(() => {
-  // 1. Load history when component mounts
-  fetchMessages();
+		const channel = supabase
+			.channel(`dm:${convoId}`)
+			.on(
+				"postgres_changes",
+				{
+					event: "INSERT",
+					schema: "public",
+					table: "messages",
+					filter: `conversation_id=eq.${convoId}`
+				},
+				(payload) => {
+					messages.update((m) => [...m, payload.new]);
+					scrollToBottomSoon();
+				}
+			)
+			.subscribe();
 
-  // 2. Subscribe to realtime inserts for this conversation
-  const channel = supabase
-    .channel(`dm:${convoId}`)
-    .on(
-      'postgres_changes',
-      {
-        event: 'INSERT',
-        schema: 'public',
-        table: 'messages',
-        filter: `conversation_id=eq.${convoId}`
-      },
-      (payload) => {
-        console.log("Realtime payload:", payload);
-        messages.update((m) => [...m, payload.new]);
-        scrollToBottomSoon?.();
-      }
-    )
-    .subscribe();
-
-  // Cleanup when component unmounts
-  return () => {
-    supabase.removeChannel(channel);
-  };
-});
-
-
+		return () => {
+			supabase.removeChannel(channel);
+		};
+	});
 </script>
 
 <main class="max-w-2xl mx-auto mt-6 px-4">
-	<header class="flex items-center justify-between mb-4">
-		<h1 class="text-2xl font-bold text-primary">Chat with {partner.username} ({partner.role})</h1>
-		<a href="/main/Therapists/Chats" class="btn btn-sm btn-outline btn-primary">Back</a>
+	<!-- Chat Header -->
+	<header class="flex items-center justify-between mb-4 bg-base-100 p-3 rounded-xl shadow">
+		<a href="/main/Therapists/Chats" class="btn btn-ghost btn-sm flex items-center gap-2">
+			<ArrowLeft class="w-4 h-4" /> Back
+		</a>
+		<h1 class="text-lg font-semibold text-primary text-center">
+			Chat with {partner.username} <span class="text-sm opacity-70">({partner.role})</span>
+		</h1>
+		<div class="w-10"></div> <!-- spacer -->
 	</header>
 
-	<section class="flex flex-col h-[70vh] bg-base-200 rounded-2xl shadow-md overflow-hidden">
-		<div bind:this={chatWindow} class="flex-1 p-4 overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-base-300">
+	<!-- Chat Window -->
+	<section class="flex flex-col h-[70vh] bg-base-200 rounded-2xl shadow-lg overflow-hidden">
+		<div
+			bind:this={chatWindow}
+			class="flex-1 p-4 overflow-y-auto space-y-4 scrollbar-thin scrollbar-thumb-base-300"
+		>
 			{#each $messages as msg}
 				<div class="chat {msg.sender_id === me.id ? 'chat-end' : 'chat-start'}">
-					<div class="chat-bubble chat-bubble-{msg.sender_id === me.id ? 'primary' : 'secondary'}">
+					<div
+						class="chat-bubble text-sm leading-relaxed 
+							{msg.sender_id === me.id 
+								? 'chat-bubble-primary shadow-md' 
+								: 'chat-bubble-secondary shadow-sm'}"
+					>
 						{msg.content}
 					</div>
 					<div class="chat-footer opacity-70 text-xs mt-1">
-						{new Date(msg.created_at).toLocaleString()}
+						{new Date(msg.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
 					</div>
 				</div>
 			{/each}
 		</div>
 
-
-
-        <div class="flex items-end gap-2 border-t border-base-300 p-3">
-	<!-- svelte-ignore element_invalid_self_closing_tag -->
-	<textarea
-		bind:value={message}
-		placeholder={`Message ${partner.username}...`}
-		class="textarea textarea-bordered w-full rounded-2xl resize-none overflow-hidden leading-relaxed"
-		rows="1"
-		oninput={(e) => {
-			const el = e.currentTarget as HTMLTextAreaElement;
-			el.style.height = "auto"; // reset height
-			el.style.height = el.scrollHeight + "px"; // grow with content
-		}}
-		onkeydown={(e) => {
-			if (e.key === "Enter" && !e.shiftKey) {
-				e.preventDefault();
-				sendMessage();
-			}
-		}}
-	/>
-	<button
-		onclick={sendMessage}
-		class="btn btn-primary rounded-full px-6 self-end"
-	>
-		Send
-	</button>
-</div>
+		<!-- Input Area -->
+		<div class="flex items-end gap-2 border-t border-base-300 bg-base-100 p-3">
+			<textarea
+				bind:value={message}
+				placeholder={`Message ${partner.username}...`}
+				class="textarea textarea-bordered w-full rounded-2xl resize-none overflow-hidden leading-relaxed"
+				rows="1"
+				oninput={(e) => {
+					const el = e.currentTarget as HTMLTextAreaElement;
+					el.style.height = "auto";
+					el.style.height = el.scrollHeight + "px";
+				}}
+				onkeydown={(e) => {
+					if (e.key === "Enter" && !e.shiftKey) {
+						e.preventDefault();
+						sendMessage();
+					}
+				}}
+			></textarea>
+			<button
+				onclick={sendMessage}
+				class="btn btn-primary btn-circle self-end"
+			>
+				<Send class="w-5 h-5" />
+			</button>
+		</div>
 	</section>
 </main>

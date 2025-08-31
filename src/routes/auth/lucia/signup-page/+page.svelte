@@ -1,10 +1,13 @@
 <script lang="ts">
-	import { Key, Mail, User } from "lucide-svelte";
+	import { Key, Mail, User } from 'lucide-svelte';
+	import type { ActionData } from './$types';
 
 	let username = $state('');
 	let password = $state('');
 	let email = $state('');
 	let message = $state('');
+
+	let { form }: { form: ActionData } = $props();
 
 	const handleSubmit = async (event: SubmitEvent) => {
 		event.preventDefault();
@@ -28,23 +31,38 @@
 		}
 	};
 </script>
-<main class="min-h-screen flex items-center justify-center bg-base-200">
-	<div class="card w-full max-w-md shadow-xl bg-base-100">
-		<div class="card-body">
-			<h2 class="text-2xl font-bold text-center text-primary">Create an Account</h2>
-			<p class="text-sm text-center text-gray-500 mb-4">Join us and get started</p>
 
-			<form onsubmit={handleSubmit} class="space-y-4">
+<main class="bg-base-200 flex min-h-screen items-center justify-center">
+	<div class="card bg-base-100 w-full max-w-md shadow-xl">
+		<div class="card-body">
+			<h2 class="text-primary text-center text-2xl font-bold">Create an Account</h2>
+			<p class="mb-4 text-center text-sm text-gray-500">Join us and get started</p>
+
+			<form method="POST" class="space-y-4">
 				<!-- Email -->
-				<label class="input w-full input-bordered flex items-center gap-2">
+				<label class="input input-bordered flex w-full items-center gap-2">
 					<Mail />
-					<input type="email" name="email" placeholder="Email" bind:value={email} required class="grow" />
+					<input
+						type="email"
+						name="email"
+						placeholder="Email"
+						bind:value={email}
+						required
+						class="grow"
+					/>
 				</label>
 
 				<!-- Username -->
-				<label class="input w-full input-bordered flex items-center gap-2">
+				<label class="input input-bordered flex w-full items-center gap-2">
 					<User />
-					<input type="text" name="username" placeholder="Username" bind:value={username} required class="grow" />
+					<input
+						type="text"
+						name="username"
+						placeholder="Username"
+						bind:value={username}
+						required
+						class="grow"
+					/>
 				</label>
 
 				<!-- Role -->
@@ -55,14 +73,21 @@
 				</select>
 
 				<!-- Password -->
-				<label class="input input-bordered  w-full flex items-center gap-2">
+				<label class="input input-bordered flex w-full items-center gap-2">
 					<Key />
-					<input type="password" name="password" placeholder="Password" bind:value={password} required class="grow" />
+					<input
+						type="password"
+						name="password"
+						placeholder="Password"
+						bind:value={password}
+						required
+						class="grow"
+					/>
 				</label>
 
 				<!-- Error message -->
-				{#if message}
-					<p class="text-error text-sm text-center">{message}</p>
+				{#if form?.message}
+					<p class="text-error text-center text-sm">{form.message}</p>
 				{/if}
 
 				<!-- Actions -->

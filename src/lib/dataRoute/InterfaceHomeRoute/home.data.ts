@@ -1,4 +1,4 @@
-import { Facebook, Info, Heart, Music2, HandHeart, Users } from "lucide-svelte";
+import { Facebook, Info, Heart, Music2, HandHeart, Users, Infinity } from "lucide-svelte";
 import type { HomeRouteInterface } from "./home.interface";
 
 
@@ -17,5 +17,10 @@ export const HomeRoute: HomeRouteInterface[] = [
     name: "Therapists",
     path: "/main/Therapists/Home/Therapists",
     icon: Users
+  },
+  {
+    name: "Philosophy",
+    path: "/main/Therapists/Home/Philosophy",
+    icon: Infinity
   }
 ];

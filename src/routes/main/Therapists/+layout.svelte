@@ -7,7 +7,7 @@
 
 	onMount(() => {
 		if (MainRoute.length > 0) {
-			goto(MainRoute[0].path); // go to the first route
+			goto(MainRoute[0].path); 
 		}
 	});
 
@@ -26,7 +26,9 @@
 					<Menu />
 				</label>
 			</div>
-			<div class="flex-1 px-2 text-xl">Mind Space</div>
+			<img src="/src/lib/assets/images/doppelganger.png" alt="doppelganger" class="h-12 w-12" />
+
+			<div class="flex-1 px-2 text-xl">SerenityHaven</div>
 			<div class="flex-none">
 				<label class="swap swap-rotate">
   <!-- this hidden checkbox controls the state -->
@@ -64,7 +66,7 @@
 		>
 			<aside>
 				<p>
-					Copyright © {new Date().getFullYear()} - All rights reserved by ACME Industries Ltd
+					Copyright © {new Date().getFullYear()} - All right reserved by SerenityHaven UIT
 				</p>
 			</aside>
 		</footer>
@@ -77,14 +79,15 @@
 			class="bg-neutral text-neutral-content flex min-h-full w-64 flex-col justify-between p-6"
 		>
 			<div>
-				<div class="avatar mb-4 flex justify-center">
-					<!-- <div class="ring-primary ring-offset-base-100 w-20 rounded-full ring ring-offset-1">
-						 {data.user.username.charAt(0).toUpperCase()}
-					</div> -->
+				<div class="avatar avatar-placeholder mb-4 flex justify-center">
+					<div class="ring-primary ring-offset-base-100 w-20 rounded-full ring ring-offset-1">
+						 {data.user?.username.charAt(0).toUpperCase()}
+					</div>
 				</div>
-				<h1 class="mb-2 text-center text-xl font-bold">{data.user.username}</h1>
-				<h2 class="mb-5 text-center text-xs">{data.user.email}</h2>
-
+				<h1 class="mb-2 text-center text-xl font-bold">{data.user?.username}</h1>
+				<h2 class="mb-2 text-center text-xs">{data.user?.email}</h2>
+				<h2 class="mb-5 text-center text-xs">{data.user?.role}</h2>
+		
 				<ul class="menu space-y-5 ">
 					{#each MainRoute as route}
 						{#if route.icon}

@@ -9,7 +9,6 @@ import type { Actions, PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		/*return redirect(302, '/auth/lucia');*/
 		return redirect(302, '/main/Therapists');
 	}
 	return {};
@@ -18,8 +17,10 @@ export const load: PageServerLoad = async (event) => {
 export const actions: Actions = {
 	login: async (event) => {
 		const formData = await event.request.formData();
-		const username = formData.get('username');
+		let username = formData.get('username');
 		const password = formData.get('password');
+
+		username = (username as string).toLowerCase();
 
 		if (!validateUsername(username)) {
 			return fail(400, {

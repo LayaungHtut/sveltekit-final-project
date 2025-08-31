@@ -8,17 +8,21 @@ import type { Actions, PageServerLoad } from './$types';
 import { eq } from 'drizzle-orm';
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		/* return redirect(302, '/auth/lucia'); */ return redirect(302, '/main/Therapists');
+		 return redirect(302, '/main/Therapists');
 	}
 	return {};
 };
 export const actions: Actions = {
 	default: async (event) => {
 		const formData = await event.request.formData();
-		const username = formData.get('username');
+		let username = formData.get('username');
 		const password = formData.get('password');
 		const email = formData.get('email');
 		const role = formData.get('role') as string;
+
+		username = (username as string).toLowerCase();
+
+		
 		if (!validateUsername(username)) {
 			return fail(400, { message: 'Invalid username' });
 		}
@@ -54,7 +58,7 @@ export const actions: Actions = {
 		try {
 			await db.insert(table.user).values({
 				id: userId,
-				username: username as string,
+				username,
 				email: email as string,
 				passwordHash,
 				role
@@ -66,7 +70,7 @@ export const actions: Actions = {
 			console.error(e);
 			return fail(500, { message: 'Username or Email already in used' });
 		}
-		/* return redirect(302, '/auth/lucia'); */ return redirect(302, '/main');
+		 return redirect(302, '/main');
 	}
 };
 function generateUserId() {
@@ -74,7 +78,7 @@ function generateUserId() {
 	return encodeBase32LowerCase(bytes);
 }
 function validateUsername(username: unknown): username is string {
-	return typeof username === 'string' && /^[a-z0-9_-]{3,31}$/.test(username);
+	return typeof username === 'string' && /^[a-zA-Z0-9_-]{3,31}$/.test(username);
 }
 function validatePassword(password: unknown): password is string {
 	return typeof password === 'string' && password.length >= 6 && password.length <= 255;
