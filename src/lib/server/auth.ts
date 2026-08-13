@@ -33,7 +33,12 @@ export async function validateSessionToken(token: string) {
 	const [result] = await db
 		.select({
 			// Adjust user table here to tweak returned data
-			user: { id: table.user.id, username: table.user.username, role: table.user.role, email: table.user.email },
+			user: {
+				id: table.user.id,
+				username: table.user.username,
+				role: table.user.role,
+				email: table.user.email
+			},
 			session: table.session
 		})
 		.from(table.session)
@@ -85,28 +90,32 @@ export function deleteSessionTokenCookie(event: RequestEvent) {
 export async function requestPasswordReset(email: string) {
 	const existingUser = await db.select().from(user).where(eq(user.email, email)).get();
 	if (!existingUser) return;
-  
+
 	const token = generateResetToken();
-	const expiresAt = new Date(Date.now() + 1000 * 60 * 15); 
-  
+	const expiresAt = new Date(Date.now() + 1000 * 60 * 15);
+
 	await db.insert(passwordResetToken).values({
-	  id: token,
-	  userId: existingUser.id,
-	  expiresAt: expiresAt
+		id: token,
+		userId: existingUser.id,
+		expiresAt: expiresAt
 	});
-  
-	// Send email 
+
+	// Send email
 	console.log(`Reset Link: http://localhost:5173/reset-password?token=${token}`);
-  }
-  
-  export async function resetPassword(token: string, newPassword: string) {
-	const record = await db.select().from(passwordResetToken).where(eq(passwordResetToken.id, token)).get();
+}
+
+export async function resetPassword(token: string, newPassword: string) {
+	const record = await db
+		.select()
+		.from(passwordResetToken)
+		.where(eq(passwordResetToken.id, token))
+		.get();
 	if (!record || record.expiresAt.getTime() < Date.now()) {
-	  throw new Error('Invalid or expired token');
+		throw new Error('Invalid or expired token');
 	}
-  
+
 	const newHashedPassword = await hashPassword(newPassword);
-  
+
 	await db.update(user).set({ passwordHash: newHashedPassword }).where(eq(user.id, record.userId));
 	await db.delete(passwordResetToken).where(eq(passwordResetToken.id, token));
-  }
+}

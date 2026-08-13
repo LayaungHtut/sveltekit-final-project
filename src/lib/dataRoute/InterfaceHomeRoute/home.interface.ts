@@ -1,8 +1,7 @@
-import type { SvelteComponentTyped } from "svelte";
-import type { IconProps } from "lucide-svelte";
+import type { ComponentType } from 'svelte';
 
 export interface HomeRouteInterface {
-  name: string;
-  path: string;
-  icon: new (...args: any[]) => SvelteComponentTyped<IconProps>; 
+	name: string;
+	path: string;
+	icon: ComponentType;
 }

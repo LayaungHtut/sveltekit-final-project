@@ -1,5 +1,11 @@
 <script>
 	import { BookOpen, FileText, PlayCircle, Mic } from 'lucide-svelte';
+	import vailImage from '$lib/assets/images/vail.jpg';
+	import snowImage from '$lib/assets/images/snow.jpg';
+	import lindaImage from '$lib/assets/images/linda.jpg';
+	import podcastImage from '$lib/assets/images/podcast.jpg';
+	import mindfulnessImage from '$lib/assets/images/mindfulness.jpg';
+	import mindfulnessPdf from '$lib/assets/mindfulness-2021.pdf';
 </script>
 
 <div class="bg-base-100 min-h-screen flex-1 overflow-y-auto p-8">
@@ -16,11 +22,7 @@
 		<!-- Articles Card -->
 		<div class="card bg-base-100 shadow-xl transition hover:shadow-2xl">
 			<figure class="h-48">
-				<img
-					src="/src/lib/assets/images/vail.jpg"
-					alt="Articles"
-					class="h-full w-full object-cover"
-				/>
+				<img src={vailImage} alt="Articles" class="h-full w-full object-cover" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title flex items-center gap-2">
@@ -42,11 +44,7 @@
 		<!-- Worksheets Card -->
 		<div class="card bg-base-100 shadow-xl transition hover:shadow-2xl">
 			<figure class="h-48">
-				<img
-					src="/src/lib/assets/images/snow.jpg"
-					alt="Worksheets"
-					class="h-full w-full object-cover"
-				/>
+				<img src={snowImage} alt="Worksheets" class="h-full w-full object-cover" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title flex items-center gap-2">
@@ -57,9 +55,7 @@
 					present moment, without judgement.
 				</p>
 				<div class="card-actions justify-end">
-					<a href="/src/lib/assets/mindfulness-2021.pdf" download class="btn btn-primary">
-						Download
-					</a>
+					<a href={mindfulnessPdf} download class="btn btn-primary"> Download </a>
 				</div>
 			</div>
 		</div>
@@ -67,11 +63,7 @@
 		<!-- Podcasts Card -->
 		<div class="card bg-base-100 shadow-xl transition hover:shadow-2xl">
 			<figure class="h-48">
-				<img
-					src="/src/lib/assets/images/linda.jpg"
-					alt="Videos"
-					class="h-full w-full object-cover"
-				/>
+				<img src={lindaImage} alt="Videos" class="h-full w-full object-cover" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title flex items-center gap-2">
@@ -94,11 +86,7 @@
 		<!-- Videos Card -->
 		<div class="card bg-base-100 shadow-xl transition hover:shadow-2xl">
 			<figure class="h-48">
-				<img
-					src="/src/lib/assets/images/podcast.jpg"
-					alt="Podcasts"
-					class="h-full w-full object-cover"
-				/>
+				<img src={podcastImage} alt="Podcasts" class="h-full w-full object-cover" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title flex items-center gap-2">
@@ -120,7 +108,7 @@
 	<section class="card bg-base-100 lg:card-side mt-14 shadow-xl">
 		<figure class="h-64 w-full lg:w-1/2">
 			<img
-				src="/src/lib/assets/images/mindfulness.jpg"
+				src={mindfulnessImage}
 				alt="Featured Resource"
 				class="h-full w-full rounded-xl object-cover"
 			/>

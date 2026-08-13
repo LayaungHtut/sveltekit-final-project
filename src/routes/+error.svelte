@@ -1,29 +1,25 @@
 <script>
 	import { page } from '$app/stores';
-	import { goto } from '$app/navigation';
-import {
-		goBackRoute,
-		goToRoute
-	} from '$lib/utils/sveltekit/router.sveltekit.util';
+	import { goBackRoute, goToRoute } from '$lib/utils/sveltekit/router.sveltekit.util';
 
 	function handleGoToHome() {
 		goToRoute('/');
 	}
 </script>
 
-<div class="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-center">
-	<h1 class="text-5xl font-bold text-gray-800 mb-4">404 Not Found</h1>
-	<p class="text-gray-600 mb-8">The page <strong>{$page.url.pathname}</strong> does not exist.</p>
+<div class="flex min-h-screen flex-col items-center justify-center bg-gray-100 text-center">
+	<h1 class="mb-4 text-5xl font-bold text-gray-800">404 Not Found</h1>
+	<p class="mb-8 text-gray-600">The page <strong>{$page.url.pathname}</strong> does not exist.</p>
 	<div class="flex gap-4">
 		<button
 			onclick={handleGoToHome}
-			class="px-6 py-2 rounded-2xl bg-blue-600 text-white shadow hover:bg-blue-700 transition"
+			class="rounded-2xl bg-blue-600 px-6 py-2 text-white shadow transition hover:bg-blue-700"
 		>
 			Home
 		</button>
 		<button
 			onclick={goBackRoute}
-			class="px-6 py-2 rounded-2xl bg-gray-400 text-white shadow hover:bg-gray-500 transition"
+			class="rounded-2xl bg-gray-400 px-6 py-2 text-white shadow transition hover:bg-gray-500"
 		>
 			Go Back
 		</button>

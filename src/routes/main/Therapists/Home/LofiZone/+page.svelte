@@ -1,75 +1,97 @@
 <script lang="ts">
-	import { Menu, Search, Bell, Sun, Moon, SkipBack, Play, Pause, SkipForward, Volume2, VolumeX, Music } from "lucide-svelte";
+	import { SkipBack, Play, Pause, SkipForward, Volume2, VolumeX, Music } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 
+	let audio: HTMLAudioElement;
 	let isPlaying = $state(false);
 	let currentTrack = $state(0);
-	let audio: HTMLAudioElement;
 	let volume = $state(0.5);
 	let quoteIndex = $state(0);
-	let currentMood = $state("Forest");
 
+	// Swap these for your own files (drop them in static/songs/).
 	const playlist = [
-		{ title: "Forest", src: "/src/lib/assets/songs/forest.mp3" },
-		{ title: "Sunset", src: "/src/lib/assets/songs/sunset.mp3" },
-		{ title: "Moonlight", src: "/src/lib/assets/songs/moonlight.mp3" }
+		{ title: 'Forest', src: '/songs/forest.mp3' },
+		{ title: 'Sunset', src: '/songs/sunset.mp3' },
+		{ title: 'Moonlight', src: '/songs/moonlight.mp3' }
 	];
 
 	const quotes = [
-		"Take a deep breath. You are exactly where you need to be.",
-		"Peace begins with a smile.",
-		"Focus on the present moment.",
-		"Let the music guide your mind."
+		'Take a deep breath. You are exactly where you need to be.',
+		'Peace begins with a smile.',
+		'Focus on the present moment.',
+		'Let the music guide your mind.'
 	];
 
-	$effect(() => {
-		if (audio) {
-			audio.volume = volume;
-			if (isPlaying) audio.play();
-			else audio.pause();
+	const STORAGE_KEY = 'serenity-lofi-settings';
+
+	onMount(() => {
+		const saved = localStorage.getItem(STORAGE_KEY);
+		if (saved) {
+			try {
+				const parsed = JSON.parse(saved);
+				if (typeof parsed.track === 'number' && parsed.track < playlist.length) {
+					currentTrack = parsed.track;
+				}
+				if (typeof parsed.volume === 'number') {
+					volume = Math.min(1, Math.max(0, parsed.volume));
+				}
+			} catch {
+				// ignore corrupted storage
+			}
 		}
+
+		const timer = setInterval(() => {
+			quoteIndex = (quoteIndex + 1) % quotes.length;
+		}, 10000);
+
+		return () => clearInterval(timer);
+	});
+
+	$effect(() => {
+		if (!audio) return;
+		audio.volume = volume;
+		localStorage.setItem(STORAGE_KEY, JSON.stringify({ track: currentTrack, volume }));
 	});
 
 	function togglePlay() {
 		if (!audio) return;
-		if (isPlaying) audio.pause();
-		else audio.play();
-		isPlaying = !isPlaying;
+		if (isPlaying) {
+			audio.pause();
+		} else {
+			audio.play();
+		}
 	}
 
 	function playTrack(index: number) {
 		if (!audio) return;
 		currentTrack = index;
-		audio.src = playlist[currentTrack].src;
+		audio.src = playlist[index].src;
 		audio.play();
-		isPlaying = true;
 	}
 
 	function nextTrack() {
-		currentTrack = (currentTrack + 1) % playlist.length;
-		playTrack(currentTrack);
+		playTrack((currentTrack + 1) % playlist.length);
 	}
 
 	function prevTrack() {
-		currentTrack = (currentTrack - 1 + playlist.length) % playlist.length;
-		playTrack(currentTrack);
+		playTrack((currentTrack - 1 + playlist.length) % playlist.length);
 	}
 
 	function changeVolume(e: Event) {
 		const target = e.target as HTMLInputElement | null;
 		if (!target) return;
 		volume = parseFloat(target.value);
-		if (audio) audio.volume = volume;
 	}
-
-	const quoteInterval = setInterval(() => {
-		quoteIndex = (quoteIndex + 1) % quotes.length;
-	}, 10000);
 </script>
 
-<main class="flex flex-col items-center justify-center min-h-screen text-white text-center relative overflow-hidden bg-base-200 p-6">
-	<h1 class="text-4xl font-bold mb-6 animate-bounce">🌿 Lofi Zone</h1>
+<main
+	class="bg-base-200 relative flex min-h-screen flex-col items-center justify-center overflow-hidden p-6 text-center text-white"
+>
+	<h1 class="mb-6 animate-bounce text-4xl font-bold">🌿 Lofi Zone</h1>
 
-	<div class="player bg-base-300 bg-opacity-60 backdrop-blur-md p-8 rounded-2xl flex flex-col items-center gap-4 shadow-xl">
+	<div
+		class="player bg-base-300 bg-opacity-60 flex flex-col items-center gap-4 rounded-2xl p-8 shadow-xl backdrop-blur-md"
+	>
 		<p class="opacity-80">Relax and chill to some lofi beats.</p>
 
 		<div class="flex items-center gap-3">
@@ -77,19 +99,19 @@
 
 			<button class="btn btn-circle btn-accent" onclick={togglePlay}>
 				{#if isPlaying}
-					<Pause class="w-6 h-6" />
+					<Pause class="h-6 w-6" />
 				{:else}
-					<Play class="w-6 h-6" />
+					<Play class="h-6 w-6" />
 				{/if}
 			</button>
 
 			<button class="btn btn-circle btn-primary" onclick={nextTrack}><SkipForward /></button>
 
-			<div class="flex items-center gap-2 ml-4">
+			<div class="ml-4 flex items-center gap-2">
 				{#if volume > 0}
-					<Volume2 class="w-5 h-5" />
+					<Volume2 class="h-5 w-5" />
 				{:else}
-					<VolumeX class="w-5 h-5" />
+					<VolumeX class="h-5 w-5" />
 				{/if}
 				<input
 					type="range"
@@ -104,18 +126,27 @@
 		</div>
 
 		<div class="playlist w-full max-w-xs">
-			{#each playlist as track, i}
+			{#each playlist as track, i (track.title)}
 				<button
-					class="btn btn-sm w-full justify-start mb-2 {currentTrack === i ? 'btn-primary' : 'btn-ghost'}"
+					class="btn btn-sm mb-2 w-full justify-start {currentTrack === i
+						? 'btn-primary'
+						: 'btn-ghost'}"
 					onclick={() => playTrack(i)}
 				>
-					<Music class="w-4 h-4 mr-2" /> {i + 1}. {track.title}
+					<Music class="mr-2 h-4 w-4" />
+					{i + 1}. {track.title}
 				</button>
 			{/each}
 		</div>
 
-		<audio bind:this={audio} src={playlist[currentTrack].src}></audio>
+		<audio
+			bind:this={audio}
+			src={playlist[currentTrack].src}
+			onplay={() => (isPlaying = true)}
+			onpause={() => (isPlaying = false)}
+			onended={nextTrack}
+		></audio>
 
-		<div class="quote italic text-sm opacity-90 mt-3">{quotes[quoteIndex]}</div>
+		<div class="quote mt-3 text-sm italic opacity-90">{quotes[quoteIndex]}</div>
 	</div>
 </main>

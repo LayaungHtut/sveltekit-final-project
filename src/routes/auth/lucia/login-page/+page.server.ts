@@ -1,5 +1,4 @@
-import { hash, verify } from '@node-rs/argon2';
-import { encodeBase32LowerCase } from '@oslojs/encoding';
+import { verify } from '@node-rs/argon2';
 import { fail, redirect } from '@sveltejs/kit';
 import { eq } from 'drizzle-orm';
 import * as auth from '$lib/server/auth';
@@ -53,10 +52,8 @@ export const actions: Actions = {
 		auth.setSessionTokenCookie(event, sessionToken, session.expiresAt);
 
 		return redirect(302, '/main/Therapists');
-	},
-	
+	}
 };
-
 
 function validateUsername(username: unknown): username is string {
 	return (

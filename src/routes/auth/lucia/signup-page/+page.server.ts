@@ -8,7 +8,7 @@ import type { Actions, PageServerLoad } from './$types';
 import { eq } from 'drizzle-orm';
 export const load: PageServerLoad = async (event) => {
 	if (event.locals.user) {
-		 return redirect(302, '/main/Therapists');
+		return redirect(302, '/main/Therapists');
 	}
 	return {};
 };
@@ -22,7 +22,6 @@ export const actions: Actions = {
 
 		username = (username as string).toLowerCase();
 
-		
 		if (!validateUsername(username)) {
 			return fail(400, { message: 'Invalid username' });
 		}
@@ -70,7 +69,7 @@ export const actions: Actions = {
 			console.error(e);
 			return fail(500, { message: 'Username or Email already in used' });
 		}
-		 return redirect(302, '/main');
+		return redirect(302, '/main');
 	}
 };
 function generateUserId() {

@@ -1,16 +1,19 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { Menu, Moon, Search, Sun } from 'lucide-svelte';
-	import type { PageServerData, ActionData } from './$types';
+	import { Menu } from 'lucide-svelte';
+	import type { PageServerData } from './$types';
 	import { enhance } from '$app/forms';
+	import logoImage from '$lib/assets/images/Doppelganger.png';
+	import heroImage from '$lib/assets/images/360_F_209499600_LyFap3lMZtLV6XXP1CUfPfI30KettOG5.jpg';
+	import workspaceImage from '$lib/assets/images/workspace.jpg';
 
-	let { form, data }: { form: ActionData; data: PageServerData } = $props();
+	let { data }: { data: PageServerData } = $props();
 </script>
 
 <div class="mainbd">
 	<div class="navbar bg-base-100 shadow-sm">
 		<div class="navbar-start">
-			<img src="/src/lib/assets/images/doppelganger.png" alt="doppelganger" class="h-12 w-12" />
+			<img src={logoImage} alt="doppelganger" class="h-12 w-12" />
 			{#if data.user}
 				<div class="dropdown">
 					<div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -39,8 +42,6 @@
 		<div class="navbar-end">
 			{#if data.user}
 				<p>{data.user.username} ({data.user.role})</p>
-
-				
 			{/if}
 
 			<label class="swap swap-rotate">
@@ -82,20 +83,18 @@
 			checked
 		/>
 		<div class="tab-content p-0">
-			<div
-	class="hero min-h-screen"
-	style="background-image: url('/src/lib/assets/images/360_F_209499600_LyFap3lMZtLV6XXP1CUfPfI30KettOG5.jpg');"
->
-
+			<div class="hero min-h-screen" style="background-image: url({heroImage});">
 				<div class="hero-overlay"></div>
 				<div class="hero-content text-neutral-content text-center">
 					<div class="max-w-md">
 						<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
 						<p class="mb-5">
-							Welcome to SerenityHaven. Here, you can explore your thoughts, track your feelings, and
-							take small steps toward a calmer mind
+							Welcome to SerenityHaven. Here, you can explore your thoughts, track your feelings,
+							and take small steps toward a calmer mind
 						</p>
-						<button onclick={() => goto('/auth/lucia/login-page')} class="btn btn-primary">Get Started</button>
+						<button onclick={() => goto('/auth/lucia/login-page')} class="btn btn-primary"
+							>Get Started</button
+						>
 					</div>
 				</div>
 			</div>
@@ -111,11 +110,7 @@
 		<div class="tab-content p-0">
 			<div class="hero bg base-200 min-h-screen">
 				<div class="hero-content flex-col text-white lg:flex-row">
-					<img
-						src="/src/lib/assets/images/workspace.jpg"
-						class="max-w-xs rounded-lg shadow-2xl"
-						alt="chill"
-					/>
+					<img src={workspaceImage} class="max-w-xs rounded-lg shadow-2xl" alt="chill" />
 					<div>
 						<h1 class="text-5xl font-bold">Your Space for Healing</h1>
 						<p class="py-6">
@@ -131,7 +126,13 @@
 			</div>
 		</div>
 
-		<input type="radio" name="my_tabs_5" class="tab" aria-label="Sign up" style="background-color: #60885E; color:antiquewhite;"/>
+		<input
+			type="radio"
+			name="my_tabs_5"
+			class="tab"
+			aria-label="Sign up"
+			style="background-color: #60885E; color:antiquewhite;"
+		/>
 
 		<div class="tab-content p-0">
 			<div class="hero bg-base-200 min-h-screen">
@@ -140,7 +141,8 @@
 					<div class="max-w-md text-center lg:text-left">
 						<h1 class="text-primary text-5xl font-extrabold">Welcome back!</h1>
 						<p class="text-base-content/70 py-6">
-							 Great to see you again! Log in to explore exercises, guides, and tools to support your wellbeing.
+							Great to see you again! Log in to explore exercises, guides, and tools to support your
+							wellbeing.
 						</p>
 					</div>
 
@@ -155,8 +157,8 @@
 									<p class="text-sm opacity-70">Role: {data.user.role}</p>
 									<p class="text-sm opacity-70">Email: {data.user.email}</p>
 									<form method="post" action="?/logout" use:enhance>
-					<button class="btn btn-dash btn-error mr-5 ml-5">Sign out</button>
-				</form>
+										<button class="btn btn-dash btn-error mr-5 ml-5">Sign out</button>
+									</form>
 								</div>
 							{:else}
 								<div class="text-center">

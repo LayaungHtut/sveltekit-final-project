@@ -24,14 +24,14 @@
 
 			<div class="divider">Causes</div>
 			<ul class="list-inside list-disc space-y-3">
-				{#each condition.causes as cause}
+				{#each condition.causes as cause, i (i)}
 					<li>{cause}</li>
 				{/each}
 			</ul>
 
 			<div class="divider mt-8">Treatments</div>
 			<ul class="space-y-3">
-				{#each condition.treatments as treatment}
+				{#each condition.treatments as treatment, i (i)}
 					<li class="flex items-start gap-2">
 						<span class="badge badge-outline badge-success mt-1">✓</span>
 						<span>{treatment}</span>

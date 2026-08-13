@@ -2,33 +2,40 @@
 	import type { ActionData } from './$types';
 	import { goto } from '$app/navigation';
 	import { KeyIcon, UserIcon } from 'lucide-svelte';
+	import logoImage from '$lib/assets/images/Doppelganger.png';
 
 	let { form }: { form: ActionData } = $props();
 </script>
 
-<main class="min-h-screen flex items-center justify-center bg-base-200">
-	<div class="card w-full max-w-md shadow-xl bg-base-100">
+<main class="bg-base-200 flex min-h-screen items-center justify-center p-4">
+	<div class="card bg-base-100 w-full max-w-md shadow-xl">
 		<div class="card-body">
-			<h1 class="text-2xl font-bold text-center text-primary">Welcome Back 👋</h1>
-			<p class="text-sm text-center text-gray-500 mb-4">Login to continue</p>
+			<div class="mb-2 flex flex-col items-center gap-2">
+				<img src={logoImage} alt="SerenityHaven logo" class="h-16 w-16 rounded-full" />
+				<h1 class="text-primary text-center text-2xl font-bold">Welcome Back 👋</h1>
+				<p class="text-center text-sm text-gray-500">Login to continue</p>
+			</div>
 
-			<form method="post" action="?/login"  class="space-y-4">
+			<form method="post" action="?/login" class="space-y-4">
 				<!-- Username -->
-				<label class="input input-bordered w-full flex items-center gap-2">
-						<UserIcon />
+				<label class="input input-bordered flex w-full items-center gap-2">
+					<UserIcon class="h-4 w-4 opacity-60" />
 					<input type="text" name="username" placeholder="Username" class="grow" required />
 				</label>
 
 				<!-- Password -->
-				<label class="input input-bordered w-full flex items-center gap-2">
-					<KeyIcon />
+				<label class="input input-bordered flex w-full items-center gap-2">
+					<KeyIcon class="h-4 w-4 opacity-60" />
 					<input type="password" name="password" placeholder="Password" class="grow" required />
 				</label>
 
 				<!-- Forgot password -->
 				<div class="flex justify-end">
-					<button type="button" class="link link-primary text-sm"
-						onclick={() => goto('/auth/lucia/forgotpassword-page')}>
+					<button
+						type="button"
+						class="link link-primary text-sm"
+						onclick={() => goto('/auth/lucia/forgotpassword-page')}
+					>
 						Forgot password?
 					</button>
 				</div>
@@ -41,8 +48,11 @@
 				<!-- Actions -->
 				<div class="form-control mt-4 space-y-2">
 					<button type="submit" class="btn btn-primary w-full">Login</button>
-					<button type="button" class="btn btn-outline w-full"
-						onclick={() => goto('/auth/lucia/signup-page')}>
+					<button
+						type="button"
+						class="btn btn-outline w-full"
+						onclick={() => goto('/auth/lucia/signup-page')}
+					>
 						Register
 					</button>
 				</div>

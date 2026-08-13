@@ -1,14 +1,4 @@
-import {
-	Facebook,
-	Info,
-	Heart,
-	Home,
-	Hash,
-	Smile,
-	Calendar,
-	Notebook,
-	Settings
-} from 'lucide-svelte';
+import { Home, Hash, Smile, Calendar, Notebook, Settings } from 'lucide-svelte';
 import type { RouteInterface } from './route.interface';
 
 export const MainRoute: RouteInterface[] = [

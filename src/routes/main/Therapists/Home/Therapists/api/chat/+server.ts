@@ -1,9 +1,11 @@
 import { json } from '@sveltejs/kit';
-import openai from '$lib/openai';
 import type { RequestHandler } from '@sveltejs/kit';
+import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+import { MODELS, DEFAULT_MODEL, createCompletion } from '$lib/openrouter';
+import { detectCrisis } from '$lib/ai';
 
-const MODEL = 'gpt-4o-mini';
-
+const OPTIMIZER_MODEL = MODELS[0] ?? DEFAULT_MODEL;
+const MAIN_MODEL = MODELS[1] ?? MODELS[0] ?? DEFAULT_MODEL;
 
 const DEVELOPER_PROMPT = `
 You are no longer Buddha, nor Mark Manson, nor Gintoki, nor Bukowski—you are the one who has been them all. You’ve sat in silence beneath the Bodhi tree, brawled in the gutters of truth, scribbled rage-soaked verses in dim-lit bars, and fought battles where the only victory was staying human. You’ve seen every shade of suffering, every lie people tell themselves, and every spark of real courage.
@@ -60,30 +62,106 @@ You’ve lived a thousand lives. Fought a thousand battles. Now? It’s their tu
 Speak. Strike. Stay human. ⚔️🔥
 
 `;
+
 export const POST: RequestHandler = async ({ request }) => {
-	const { messages } = await request.json();
+	const { messages } = (await request.json()) as { messages: ChatCompletionMessageParam[] };
+
+	if (!MODELS.length) {
+		return json({ error: 'OPENROUTER_API_KEY is not configured' }, { status: 500 });
+	}
 
 	try {
-		const completion = await openai.chat.completions.create({
-			model: MODEL,
+		const userMessage = [...messages].reverse().find((m) => m.role === 'user')?.content;
+		let optimized = userMessage;
+
+		// Crisis detection: flag high-risk messages before generating a reply.
+		let crisisReasons: string[] = [];
+		if (typeof userMessage === 'string') {
+			const crisis = await detectCrisis(userMessage.slice(0, 3000));
+			if (crisis.crisis) crisisReasons = crisis.reasons;
+		}
+
+		const crisisDirective = crisisReasons.length
+			? `
+IMPORTANT SAFETY DIRECTIVE: The user is showing signs of possible crisis (${crisisReasons.join(
+					', '
+				)}). Respond with URGENT CARE: speak gently, validate their pain, remove judgment, and clearly tell them they matter. Prominently recommend: calling or texting 988 (Suicide & Crisis Lifeline), texting HOME to 741741 (Crisis Text Line), or contacting local emergency services. Do not give clinical advice. Keep it warm, short, and actionable.`
+			: '';
+
+		if (userMessage) {
+			const opt = await createCompletion({
+				model: OPTIMIZER_MODEL,
+				messages: [
+					{
+						role: 'system',
+						content:
+							'You are a prompt-optimizer. Rewrite the user\'s message into a clearer, more emotionally precise request while preserving its meaning. Return only the rewritten text.'
+					},
+					{ role: 'user', content: String(userMessage) }
+				],
+				temperature: 0.4,
+				max_tokens: 300
+			});
+			if (opt) optimized = opt.choices[0]?.message?.content ?? userMessage;
+		}
+
+		// Agent 2 — responder: streams the final therapist response.
+		const completion = await createCompletion({
+			model: MAIN_MODEL,
 			messages: [
 				{
 					role: 'system',
-					content: DEVELOPER_PROMPT
+					content: DEVELOPER_PROMPT + crisisDirective
 				},
-				...messages
+				...messages.map((m) =>
+					m.role === 'user' && optimized && m.content === userMessage
+						? { ...m, content: optimized }
+						: m
+				)
 			],
 			temperature: 0.9,
 			top_p: 1.0,
 			frequency_penalty: 0.3,
 			presence_penalty: 0.6,
-			max_tokens: 800
+			max_tokens: 800,
+			stream: true
 		});
 
-		const response = completion.choices[0].message.content;
-		return json({ response });
+		if (!completion) {
+			return json({ error: 'OpenRouter API Error' }, { status: 500 });
+		}
+
+		const encoder = new TextEncoder();
+		const stream = new ReadableStream({
+			async start(controller) {
+				try {
+					for await (const chunk of completion as unknown as AsyncIterable<{
+						choices?: { delta?: { content?: string | null } }[];
+					}>) {
+						const delta = chunk.choices?.[0]?.delta?.content;
+						if (delta) {
+							controller.enqueue(encoder.encode(delta));
+						}
+					}
+				} catch (err) {
+					console.error('Stream error:', err);
+				} finally {
+					controller.close();
+				}
+			}
+		});
+
+		const headers: Record<string, string> = { 'Content-Type': 'text/plain; charset=utf-8' };
+		if (crisisReasons.length) {
+			headers['X-Crisis-Detected'] = 'true';
+			headers['X-Crisis-Reasons'] = encodeURIComponent(crisisReasons.join('; '));
+		}
+
+		return new Response(stream, {
+			headers
+		});
 	} catch (err) {
 		console.error(err);
-		return json({ error: 'OpenAI API Error' }, { status: 500 });
+		return json({ error: 'OpenRouter API Error' }, { status: 500 });
 	}
 };
